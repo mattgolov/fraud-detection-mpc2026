@@ -13,6 +13,7 @@ import {
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import AddIcon from '@mui/icons-material/Add';
 import ApiHandler from '../services/ApiHandler';
+import { SESSION_ID } from '../mock/MockApiData';
 
 export default function SetupView() {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ export default function SetupView() {
 
     try {
       if (isDebugMode) {
-        const mockSessionId = 'sess_001';
+        const mockSessionId = SESSION_ID;
         sessionStorage.setItem('sessionId', mockSessionId);
         sessionStorage.setItem('reviewerName', reviewerName || 'Anonymous Reviewer');
         setUploadSuccess(true);
@@ -42,7 +43,7 @@ export default function SetupView() {
           navigate(`/fraud_cases/${mockSessionId}`);
         }, 500);
       } else {
-        const result = await ApiHandler.uploadCsv(file);
+        const result = await ApiHandler.uploadCsv(file, reviewerName || 'Anonymous Reviewer');
         if (result.error) {
           setUploadError(result.error);
         } else {

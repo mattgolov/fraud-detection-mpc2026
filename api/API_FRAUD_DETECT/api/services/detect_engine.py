@@ -228,8 +228,6 @@ def evaluate_fraud_hybrid(data: pd.DataFrame) -> list[dict]:
         )
 
     # ── Final decision ────────────────────────────────────────────────────────
-    
-    
     data['fraud_reasons_str'] = data['fraud_reasons'].apply(
         lambda x: "; ".join(x) if x else "No flags"
     )
@@ -239,9 +237,7 @@ def evaluate_fraud_hybrid(data: pd.DataFrame) -> list[dict]:
         "Block / Review",
         "Approve",
     )
-    data = data.loc['transaction_id', session]  # ensure transaction_id is the first column
 
-
-    #List of dicts to be used for creating FraudCase and FraudCaseTransaction objects
+    # List of dicts to be used for creating FraudCase and FraudCaseTransaction objects
     return data[data['final_fraud_decision'] == 'Block / Review'].to_dict(orient='records')
 

@@ -1,14 +1,19 @@
 import type { FraudCase } from '../interface/FraudCase';
-import { MOCK_FRAUD_CASES } from '../mock/MockApiData';
+import {
+  MOCK_FRAUD_CASES,
+  createSession,
+  getSessionData,
+  getFraudCaseDetail,
+  getSessionMasterLedgerCsv,
+  getSessionFlaggedLedgerCsv,
+  getSessionFraudCasesSummaryCsv,
+  type FraudCaseDetailResponse,
+  type SessionData,
+  type CreateSessionResponse,
+} from '../mock/MockApiData';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 const IS_DEBUG_MODE = import.meta.env.VITE_DEBUG === 'true';
-
-interface SessionData {
-  id: string;
-  reviewer_name?: string;
-  [key: string]: unknown;
-}
 
 interface ApiResponse<T> {
   data?: T;
@@ -51,12 +56,25 @@ class ApiHandler {
     }
   }
 
-  async uploadCsv(file: File): Promise<ApiResponse<SessionData>> {
-    const formData = new FormData();
-    formData.append('file', file);
+  async uploadCsv(
+    file: File,
+    reviewerName: string
+  ): Promise<ApiResponse<CreateSessionResponse>> {
+    if (IS_DEBUG_MODE) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve({
+            data: createSession(reviewerName),
+          });
+        }, 600);
+      });
+    }
 
     try {
-      const response = await fetch(`${this.baseUrl}/api/session/upload`, {
+      const formData = new FormData();
+      formData.append('file', file);
+
+      const response = await fetch(`${this.baseUrl}/session/create`, {
         method: 'POST',
         body: formData,
       });
@@ -74,44 +92,131 @@ class ApiHandler {
   }
 
   async getSession(sessionId: string): Promise<ApiResponse<SessionData>> {
-    return this.request<SessionData>(`/api/session/${sessionId}`);
-  }
-
-  async getFraudCases(
-    sessionId: string
-  ): Promise<ApiResponse<FraudCase[]>> {
     if (IS_DEBUG_MODE) {
       return new Promise((resolve) => {
         setTimeout(() => {
+          const data = getSessionData(sessionId);
+          if (!data) {
+            resolve({ error: 'Session not found' });
+          } else {
+            resolve({ data });
+          }
+        }, 400);
+      });
+    }
+
+    return this.request<SessionData>(`/load/session/${sessionId}/`);
+  }
+
+  async getFraudCases(sessionId: string): Promise<ApiResponse<FraudCase[]>> {
+    if (IS_DEBUG_MODE) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          const fraudCases = MOCK_FRAUD_CASES.filter(
+            (fraudCase) => fraudCase.session_id === sessionId
+          ).sort((a, b) => b.risk_score - a.risk_score);
+
           resolve({
-            data: MOCK_FRAUD_CASES.filter(
-              (fraudCase) => fraudCase.session_id === sessionId
-            ),
+            data: fraudCases,
           });
         }, 800);
       });
     }
 
-    return this.request<FraudCase[]>(
-      `/api/fraud_cases/?session_id=${sessionId}`
-    );
+    return this.request<FraudCase[]>(`/fraud_cases/${sessionId}/`);
   }
 
   async getFraudCase(
-    caseId: string,
-    sessionId: string
-  ): Promise<ApiResponse<FraudCase>> {
-    return this.request<FraudCase>(
-      `/api/fraud_cases/${caseId}?session_id=${sessionId}`
+    sessionId: string,
+    pk: string
+  ): Promise<ApiResponse<FraudCaseDetailResponse>> {
+    if (IS_DEBUG_MODE) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          const detailData = getFraudCaseDetail(sessionId, pk);
+          if (!detailData) {
+            resolve({ error: 'Fraud case not found' });
+          } else {
+            resolve({ data: detailData });
+          }
+        }, 600);
+      });
+    }
+
+    return this.request<FraudCaseDetailResponse>(
+      `/fraud_cases/${sessionId}/${pk}/`
     );
   }
 
-  async exportSession(sessionId: string): Promise<ApiResponse<unknown>> {
-    return this.request(`/api/session/${sessionId}/export`);
+  async updateFraudCase(
+    sessionId: string,
+    pk: string,
+    updates: Partial<{ status: string; reviewer_notes: string }>
+  ): Promise<ApiResponse<FraudCase>> {
+    if (IS_DEBUG_MODE) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          const fraudCase = MOCK_FRAUD_CASES.find(
+            (fc) => fc.id === pk && fc.session_id === sessionId
+          );
+
+          if (!fraudCase) {
+            resolve({ error: 'Fraud case not found' });
+          } else {
+            const updated: FraudCase = {
+              ...fraudCase,
+              ...(updates.status && { status: updates.status as FraudCase['status'] }),
+              ...(updates.reviewer_notes !== undefined && { reviewer_notes: updates.reviewer_notes }),
+            };
+            resolve({ data: updated });
+          }
+        }, 500);
+      });
+    }
+
+    return this.request<FraudCase>(`/fraud_cases/${sessionId}/${pk}/`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(updates),
+    });
   }
 
-  async getSessions(): Promise<ApiResponse<SessionData[]>> {
-    return this.request<SessionData[]>('/api/sessions/');
+  async exportSession(sessionId: string): Promise<ApiResponse<string>> {
+    if (IS_DEBUG_MODE) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          const boundary = 'csv_export_boundary';
+          const masterLedger = getSessionMasterLedgerCsv();
+          const flaggedLedger = getSessionFlaggedLedgerCsv();
+          const fraudCasesSummary = getSessionFraudCasesSummaryCsv();
+
+          const multipartContent = [
+            `--${boundary}`,
+            'Content-Type: text/csv',
+            'Content-Disposition: attachment; filename="session_master_ledger.csv"',
+            '',
+            masterLedger,
+            `--${boundary}`,
+            'Content-Type: text/csv',
+            'Content-Disposition: attachment; filename="session_flagged_ledger.csv"',
+            '',
+            flaggedLedger,
+            `--${boundary}`,
+            'Content-Type: text/csv',
+            'Content-Disposition: attachment; filename="session_fraud_cases_summary.csv"',
+            '',
+            fraudCasesSummary,
+            `--${boundary}--`,
+          ].join('\n');
+
+          resolve({ data: multipartContent });
+        }, 1000);
+      });
+    }
+
+    return this.request<string>(`/session/${sessionId}/export/`);
   }
 }
 

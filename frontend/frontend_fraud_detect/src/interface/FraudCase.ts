@@ -1,4 +1,4 @@
-export type FraudStatus = 'ACCEPTED' | 'REJECTED' | 'ESCALATED';
+export type FraudStatus = 'PENDING' | 'ACCEPTED' | 'REJECTED' | 'ESCALATED';
 
 export interface FraudCase {
   id: string;
