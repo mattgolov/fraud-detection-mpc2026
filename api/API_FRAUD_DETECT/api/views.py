@@ -10,6 +10,7 @@ from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.generics import RetrieveUpdateAPIView
+from .detect_engine import load_and_prepare_data,  evaluate_fraud_hybrid, engineer_features
 
 from .models import Session, Transaction, FraudCase, FraudCaseTransaction
 from .serializers import (
@@ -71,21 +72,23 @@ class SessionLoadView(APIView):
 
         transactions = Transaction.objects.filter(session=session).select_related('session')
 
+        df = load_and_prepare_data(transactions)
+
+        flagged_transactions : list[dict] = evaluate_fraud_hybrid(df)
+
         with transaction.atomic():
             fraud_cases: list[FraudCase] = []
             fraud_case_transactions: list[FraudCaseTransaction] = []
 
-            for tx in transactions:
-                risk_score = random.uniform(0, 100)
-                fraud_typology = self._determine_fraud_typology(tx)
+            for tx in flagged_transactions:
 
                 fraud_case = FraudCase(
                     session=session,
-                    risk_score=risk_score,
-                    fraud_typology=fraud_typology,
+                    risk_score=flagged_transactions['fraud_score'],
+                    fraud_typology=flagged_transactions['fraud_reasons_str'],
                     fraud_detection_engine_notes={
-                        'amount': str(tx.amount),
-                        'channel': tx.channel,
+                        'amount': flagged_transactions['amount'],
+                        'channel': flagged_transactions['merchant_category'],
                         'cross_border': tx.cardholder_country != tx.merchant_country,
                     },
                 )
@@ -93,7 +96,7 @@ class SessionLoadView(APIView):
 
             FraudCase.objects.bulk_create(fraud_cases)
 
-            for idx, tx in enumerate(transactions):
+            for idx, tx in enumerate(flagged_transactions):
                 fraud_case = fraud_cases[idx]
                 fraud_case_transactions.append(
                     FraudCaseTransaction(
