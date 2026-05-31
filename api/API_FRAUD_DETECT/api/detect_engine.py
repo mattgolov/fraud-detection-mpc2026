@@ -245,19 +245,3 @@ def evaluate_fraud_hybrid(data: pd.DataFrame) -> list[dict]:
     #List of dicts to be used for creating FraudCase and FraudCaseTransaction objects
     return data[data['final_fraud_decision'] == 'Block / Review'].to_dict(orient='records')
 
-
-# ── Entry point ───────────────────────────────────────────────────────────────
-
-df = load_and_prepare_data('transactions.csv')
-df = engineer_features(df)
-processed_df = evaluate_fraud_hybrid(df)
-
-if __name__ == '__main__':
-    blocked = processed_df[processed_df['final_fraud_decision'] == 'Block / Review']
-    print(f"Transactions evaluated : {len(processed_df)}")
-    print(f"Blocked / flagged      : {len(blocked)}")
-    print()
-    print(blocked[[
-        'transaction_id', 'card_id', 'amount', 'merchant_name',
-        'fraud_score', 'final_fraud_decision', 'fraud_reasons_str'
-    ]].to_string(index=False))
