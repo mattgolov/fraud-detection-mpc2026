@@ -1,0 +1,1001 @@
+transaction_id,card_id,timestamp,merchant_name,merchant_category,amount,channel,cardholder_country,merchant_country,device_id,fraud_score,final_fraud_decision,fraud_reasons_str,card_tx_count_10m,card_tx_count_1m,country_mismatch,is_high_risk_merchant,impossible_travel,micro_probe
+tx_000018,card_000,2026-04-25 14:13:47,Hydro-Quebec,utilities,51.5,online,CA,CA,dev_bc0178b6,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000006,card_000,2026-04-29 09:17:47,Esso,gas,82.96,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000001,card_000,2026-05-05 18:39:29,Bell Canada,utilities,115.44,online,CA,CA,dev_bc0178b6,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000982,card_000,2026-05-06 16:57:00,Cineplex,entertainment,34.86,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000983,card_000,2026-05-06 17:13:00,Newegg,electronics,1032.48,online,CA,US,dev_c038c175,65,Block / Review,"Country mismatch (CA card / US merchant); High-risk merchant, large amount ($1032.48); Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,1,1,0,0
+tx_000014,card_000,2026-05-07 22:34:49,Bell Canada,utilities,13.49,online,CA,CA,dev_bc0178b6,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000003,card_000,2026-05-09 23:12:57,La Banquise,restaurant,11.77,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000012,card_000,2026-05-10 18:09:35,Cafe Olimpico,restaurant,19.81,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000019,card_000,2026-05-11 01:11:16,Tim Hortons,restaurant,74.42,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000007,card_000,2026-05-15 04:09:33,Joe Beef,restaurant,34.54,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000005,card_000,2026-05-16 23:34:15,Chipotle,restaurant,32.26,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000009,card_000,2026-05-17 12:41:59,Bell Canada,utilities,36.74,online,CA,CA,dev_bc0178b6,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000017,card_000,2026-05-19 08:05:05,Starbucks,restaurant,17.07,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000002,card_000,2026-05-19 17:02:20,Shell,gas,39.34,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000013,card_000,2026-05-21 01:29:40,Hydro-Quebec,utilities,36.32,online,CA,CA,dev_bc0178b6,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000015,card_000,2026-05-21 02:24:52,Tim Hortons,restaurant,193.99,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000008,card_000,2026-05-22 07:05:41,Esso,gas,77.44,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000004,card_000,2026-05-23 07:05:41,Bell Canada,utilities,176.05,online,CA,CA,dev_bc0178b6,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000016,card_000,2026-05-23 12:29:14,Chevron,gas,87.62,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000011,card_000,2026-05-24 10:25:11,Shell,gas,16.87,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000010,card_000,2026-05-24 15:26:59,Videotron,utilities,11.85,online,CA,CA,dev_bc0178b6,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000027,card_001,2026-04-25 15:51:42,Etsy,online_retail,69.73,online,CA,US,dev_8080a2c9,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000023,card_001,2026-04-27 22:48:21,Desjardins ATM,atm,100.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000028,card_001,2026-05-01 22:58:31,Shopify Merchant 1,online_retail,289.54,online,CA,CA,dev_8d790a73,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000031,card_001,2026-05-05 15:34:06,QuickPay Online,online_retail,24.83,online,CA,CA,dev_8d790a73,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000032,card_001,2026-05-10 18:09:55,Shopify Merchant 1,online_retail,51.34,online,CA,CA,dev_8d790a73,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000024,card_001,2026-05-11 16:33:53,AliExpress,online_retail,55.49,online,CA,CN,dev_8080a2c9,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000034,card_001,2026-05-14 03:19:24,Videotron,utilities,30.94,online,CA,CA,dev_8d790a73,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000022,card_001,2026-05-16 10:09:36,eBay,online_retail,106.79,online,CA,US,dev_8080a2c9,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000029,card_001,2026-05-16 15:53:05,Disney+,subscription,19.99,online,CA,US,dev_8d790a73,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000030,card_001,2026-05-18 00:04:25,Amazon.com,online_retail,45.5,online,CA,US,dev_8d790a73,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000020,card_001,2026-05-22 13:34:35,Hydro-Quebec,utilities,132.86,online,CA,CA,dev_8080a2c9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000033,card_001,2026-05-22 15:59:57,AliExpress,online_retail,22.87,online,CA,CN,dev_8d790a73,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000025,card_001,2026-05-23 07:45:13,Videotron,utilities,57.73,online,CA,CA,dev_8080a2c9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000026,card_001,2026-05-23 23:29:04,Bell Canada,utilities,84.21,online,CA,CA,dev_8d790a73,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000021,card_001,2026-05-24 21:52:23,Disney+,subscription,11.99,online,CA,US,dev_8d790a73,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000041,card_002,2026-04-25 05:09:52,McDonald's,restaurant,57.27,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000038,card_002,2026-04-30 18:55:21,Whole Foods,grocery,24.11,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000052,card_002,2026-04-30 20:53:42,Tim Hortons,restaurant,15.66,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000047,card_002,2026-05-01 02:43:54,Netflix,subscription,19.99,online,CA,US,dev_6200257c,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000054,card_002,2026-05-02 03:25:31,Provigo,grocery,25.92,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000045,card_002,2026-05-04 04:30:02,Chipotle,restaurant,41.05,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000995,card_002,2026-05-05 02:25:59,QuickPay Online,online_retail,735.44,online,CA,CA,dev_a89efa00,55,Block / Review,"High-risk merchant, large amount ($735.44); Micro-probe pattern: prior 3 txs max $41.05, then $735.44 at QuickPay Online; Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,0,1,0,1
+tx_000050,card_002,2026-05-05 11:29:11,Starbucks,restaurant,18.92,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000048,card_002,2026-05-06 02:00:14,Amazon.com,online_retail,38.76,online,MX,US,dev_6200257c,15,Approve,Country mismatch (MX card / US merchant),1.0,1.0,1,0,0,0
+tx_000051,card_002,2026-05-07 22:01:44,La Banquise,restaurant,33.64,in_person,MX,MX,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000039,card_002,2026-05-11 04:40:15,Spotify,subscription,11.99,online,MX,SE,dev_c2b98918,15,Approve,Country mismatch (MX card / SE merchant),1.0,1.0,1,0,0,0
+tx_000053,card_002,2026-05-12 23:11:02,Starbucks,restaurant,35.69,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000036,card_002,2026-05-13 05:08:18,Cafe Olimpico,restaurant,9.34,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000049,card_002,2026-05-14 22:38:57,QuickPay Online,online_retail,16.66,online,CA,CA,dev_6200257c,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000040,card_002,2026-05-16 10:49:43,Amazon.ca,online_retail,5.1,online,CA,CA,dev_c2b98918,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000035,card_002,2026-05-16 23:44:21,La Banquise,restaurant,26.65,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000037,card_002,2026-05-17 06:33:06,Cineplex,entertainment,15.78,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000043,card_002,2026-05-17 09:13:59,Etsy,online_retail,7.37,online,CA,US,dev_c2b98918,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000044,card_002,2026-05-20 13:06:24,Etsy,online_retail,10.9,online,CA,US,dev_6200257c,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000046,card_002,2026-05-23 06:53:57,Whole Foods,grocery,19.94,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000042,card_002,2026-05-24 02:24:37,BMO ATM,atm,200.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000063,card_003,2026-04-25 06:51:00,Provigo,grocery,48.14,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000056,card_003,2026-04-28 16:22:50,Desjardins ATM,atm,60.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000057,card_003,2026-04-28 17:33:50,Disney+,subscription,15.99,online,CA,US,dev_d52ac3b8,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000061,card_003,2026-04-28 18:40:26,QuickPay Online,online_retail,74.47,online,CA,CA,dev_6fdbe52d,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000066,card_003,2026-04-29 13:48:16,Amazon.ca,online_retail,53.66,online,CA,CA,dev_d52ac3b8,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000068,card_003,2026-04-29 16:39:06,Netflix,subscription,13.99,online,CA,US,dev_6fdbe52d,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000062,card_003,2026-04-30 18:00:17,Shopify Merchant 2,online_retail,26.48,online,CA,CA,dev_6fdbe52d,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000073,card_003,2026-05-01 01:11:32,Shopify Merchant 1,online_retail,43.21,online,CA,CA,dev_d52ac3b8,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000055,card_003,2026-05-09 19:30:09,Loblaws,grocery,33.11,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000072,card_003,2026-05-10 09:19:18,eBay,online_retail,81.0,online,CA,US,dev_6fdbe52d,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000059,card_003,2026-05-12 02:49:55,Amazon.com,online_retail,49.05,online,CA,US,dev_6fdbe52d,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000069,card_003,2026-05-13 04:47:31,Netflix,subscription,9.99,online,CA,US,dev_6fdbe52d,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000065,card_003,2026-05-14 20:39:25,Cineplex,entertainment,43.74,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000067,card_003,2026-05-15 20:18:06,Netflix,subscription,19.99,online,CA,US,dev_6fdbe52d,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000070,card_003,2026-05-17 12:35:08,Spotify,subscription,11.99,online,CA,SE,dev_d52ac3b8,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000071,card_003,2026-05-20 00:07:49,Amazon.ca,online_retail,61.8,online,CA,CA,dev_6fdbe52d,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000064,card_003,2026-05-20 08:55:21,Loblaws,grocery,24.42,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000060,card_003,2026-05-21 16:39:03,Amazon.ca,online_retail,136.88,online,CA,CA,dev_d52ac3b8,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000058,card_003,2026-05-23 21:26:52,Desjardins ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000081,card_004,2026-04-25 00:32:37,Schwartz's,restaurant,160.55,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000075,card_004,2026-04-28 05:23:00,Desjardins ATM,atm,20.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000083,card_004,2026-04-29 23:46:42,Spotify,subscription,19.99,online,CA,SE,dev_56520353,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000084,card_004,2026-05-01 12:21:08,McDonald's,restaurant,33.15,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000077,card_004,2026-05-02 11:09:56,Tim Hortons,restaurant,65.41,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000085,card_004,2026-05-04 04:21:53,BMO ATM,atm,60.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000078,card_004,2026-05-05 01:40:25,Desjardins ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000087,card_004,2026-05-07 21:20:20,Desjardins ATM,atm,20.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000088,card_004,2026-05-13 01:25:44,Esso,gas,20.09,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000076,card_004,2026-05-19 22:17:58,McDonald's,restaurant,23.59,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000079,card_004,2026-05-21 12:17:37,Joe Beef,restaurant,12.5,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000074,card_004,2026-05-21 13:32:08,Shell,gas,28.24,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000086,card_004,2026-05-23 06:56:32,Petro-Canada,gas,23.48,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000082,card_004,2026-05-23 11:00:57,Netflix,subscription,13.99,online,CA,US,dev_56520353,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000102,card_005,2026-04-27 14:29:34,Bell Canada,utilities,13.47,online,CA,CA,dev_379050df,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000091,card_005,2026-04-27 16:10:58,Etsy,online_retail,23.91,online,CA,US,dev_45d2fa60,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000101,card_005,2026-04-28 10:08:24,Loblaws,grocery,6.11,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000103,card_005,2026-04-29 21:47:56,Bell Canada,utilities,20.01,online,CA,CA,dev_379050df,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000099,card_005,2026-05-03 22:37:02,Amazon.com,online_retail,11.39,online,CA,US,dev_379050df,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000100,card_005,2026-05-09 01:16:46,Joe Beef,restaurant,15.01,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000090,card_005,2026-05-09 03:55:11,BMO ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000089,card_005,2026-05-11 22:33:15,Whole Foods,grocery,47.26,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000092,card_005,2026-05-12 17:21:50,Joe Beef,restaurant,20.33,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000094,card_005,2026-05-12 21:13:38,Netflix,subscription,19.99,online,CA,US,dev_379050df,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000104,card_005,2026-05-13 01:14:09,Amazon.ca,online_retail,51.23,online,CA,CA,dev_379050df,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000097,card_005,2026-05-14 10:47:44,Whole Foods,grocery,7.21,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000096,card_005,2026-05-17 11:49:05,QuickPay Online,online_retail,13.77,online,CA,CA,dev_45d2fa60,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000095,card_005,2026-05-18 10:28:16,Netflix,subscription,19.99,online,CA,US,dev_45d2fa60,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000093,card_005,2026-05-22 11:48:40,Joe Beef,restaurant,16.22,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000114,card_006,2026-04-26 11:31:03,Shell,gas,85.7,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000111,card_006,2026-04-27 21:22:15,Etsy,online_retail,22.43,online,CA,US,dev_1321b774,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000110,card_006,2026-04-28 04:22:19,Cafe Olimpico,restaurant,42.9,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000108,card_006,2026-05-03 00:53:07,Spotify,subscription,9.99,online,CA,SE,dev_1321b774,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000116,card_006,2026-05-03 13:57:37,Shopify Merchant 2,online_retail,55.3,online,CA,CA,dev_1321b774,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000120,card_006,2026-05-06 19:26:18,Cafe Olimpico,restaurant,90.87,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000117,card_006,2026-05-08 19:06:44,Joe Beef,restaurant,66.18,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000113,card_006,2026-05-08 19:34:03,Disney+,subscription,13.99,online,CA,US,dev_1321b774,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000112,card_006,2026-05-12 06:15:37,Cafe Olimpico,restaurant,31.98,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000105,card_006,2026-05-13 08:38:24,Etsy,online_retail,63.31,online,CA,US,dev_1321b774,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000115,card_006,2026-05-13 13:10:12,McDonald's,restaurant,107.83,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000119,card_006,2026-05-14 20:27:39,Tim Hortons,restaurant,81.06,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000106,card_006,2026-05-16 03:37:30,Esso,gas,16.32,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000118,card_006,2026-05-17 07:53:35,Schwartz's,restaurant,198.88,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000107,card_006,2026-05-17 13:06:41,McDonald's,restaurant,10.62,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000109,card_006,2026-05-24 03:23:33,Videotron,utilities,23.93,online,CA,CA,dev_1321b774,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000121,card_006,2026-05-24 08:14:33,Amazon.com,online_retail,25.13,online,CA,US,dev_1321b774,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000124,card_007,2026-04-27 15:39:26,Bell Canada,utilities,49.23,online,US,CA,dev_5d017d53,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000132,card_007,2026-04-28 08:49:10,Petro-Canada,gas,37.6,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000141,card_007,2026-04-28 14:57:11,Metro,grocery,24.16,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000142,card_007,2026-04-29 06:00:23,Videotron,utilities,54.22,online,US,CA,dev_5d017d53,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000127,card_007,2026-04-29 18:15:41,Provigo,grocery,45.67,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000140,card_007,2026-04-30 01:13:32,Bell Canada,utilities,52.34,online,US,CA,dev_5d017d53,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000143,card_007,2026-04-30 04:10:27,Hydro-Quebec,utilities,43.21,online,US,CA,dev_5d017d53,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000135,card_007,2026-04-30 08:21:18,Loblaws,grocery,46.88,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000129,card_007,2026-05-02 12:32:01,IGA,grocery,30.67,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000126,card_007,2026-05-04 05:57:01,Shell,gas,26.77,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000137,card_007,2026-05-04 19:00:19,Loblaws,grocery,8.81,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000133,card_007,2026-05-05 15:12:42,Desjardins ATM,atm,60.0,atm,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000128,card_007,2026-05-10 05:39:26,BMO ATM,atm,40.0,atm,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000130,card_007,2026-05-10 09:55:56,Loblaws,grocery,12.34,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000125,card_007,2026-05-10 19:13:29,IGA,grocery,19.14,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000134,card_007,2026-05-11 08:26:20,Hydro-Quebec,utilities,20.72,online,US,CA,dev_5d017d53,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000139,card_007,2026-05-12 09:26:43,RBC ATM,atm,40.0,atm,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000138,card_007,2026-05-13 12:37:18,Esso,gas,40.61,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000136,card_007,2026-05-14 05:44:30,RBC ATM,atm,40.0,atm,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000122,card_007,2026-05-14 12:13:17,RBC ATM,atm,40.0,atm,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_001002,card_007,2026-05-17 15:22:21,QuickPay Online,online_retail,820.61,online,US,CA,dev_399a3e32,75,Block / Review,"Country mismatch (US card / CA merchant); High-risk merchant, large amount ($820.61); Micro-probe pattern: prior 3 txs max $40.61, then $820.61 at QuickPay Online; Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,1,1,0,1
+tx_000123,card_007,2026-05-21 16:52:19,Provigo,grocery,108.47,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000151,card_008,2026-04-26 02:10:03,Amazon.com,online_retail,31.89,online,CA,US,dev_a088f010,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000156,card_008,2026-04-26 10:26:15,Schwartz's,restaurant,84.46,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000161,card_008,2026-04-30 08:05:43,Esso,gas,86.69,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000145,card_008,2026-05-01 17:15:56,Chevron,gas,19.72,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000164,card_008,2026-05-05 17:42:53,Metro,grocery,33.76,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000157,card_008,2026-05-06 11:13:08,McDonald's,restaurant,25.75,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000149,card_008,2026-05-10 22:58:54,Metro,grocery,96.96,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000165,card_008,2026-05-13 14:05:58,IGA,grocery,25.33,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000147,card_008,2026-05-15 00:48:41,Cafe Olimpico,restaurant,18.7,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000154,card_008,2026-05-17 14:07:55,Shopify Merchant 2,online_retail,29.46,online,CA,CA,dev_a088f010,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000162,card_008,2026-05-17 18:02:24,Whole Foods,grocery,17.73,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000166,card_008,2026-05-19 17:30:23,Chipotle,restaurant,18.64,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000160,card_008,2026-05-19 17:56:45,Joe Beef,restaurant,21.06,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000155,card_008,2026-05-20 22:24:36,La Banquise,restaurant,25.17,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000163,card_008,2026-05-21 07:15:13,eBay,online_retail,54.36,online,CA,US,dev_a088f010,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000144,card_008,2026-05-22 02:13:08,Chevron,gas,8.56,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000159,card_008,2026-05-22 08:18:39,Netflix,subscription,11.99,online,CA,US,dev_a088f010,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000153,card_008,2026-05-23 06:57:08,Loblaws,grocery,25.74,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000158,card_008,2026-05-23 19:58:49,Etsy,online_retail,44.02,online,CA,US,dev_a088f010,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000152,card_008,2026-05-23 20:08:09,QuickPay Online,online_retail,41.73,online,CA,CA,dev_a088f010,0,Approve,Unusual pattern detected by ML model (Isolation Forest),2.0,1.0,0,1,0,0
+tx_000146,card_008,2026-05-24 04:20:11,Metro,grocery,22.38,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000148,card_008,2026-05-24 11:04:46,Cafe Olimpico,restaurant,11.86,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000150,card_008,2026-05-24 15:36:39,Etsy,online_retail,15.28,online,CA,US,dev_a088f010,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000172,card_009,2026-04-29 23:53:07,Starbucks,restaurant,8.41,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000175,card_009,2026-05-01 21:07:10,AliExpress,online_retail,32.16,online,US,CN,dev_b62b3697,15,Approve,Country mismatch (US card / CN merchant),1.0,1.0,1,0,0,0
+tx_000173,card_009,2026-05-01 23:24:03,Amazon.com,online_retail,10.85,online,US,US,dev_b62b3697,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000181,card_009,2026-05-02 14:17:52,McDonald's,restaurant,28.11,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000170,card_009,2026-05-03 13:56:49,Shopify Merchant 1,online_retail,6.47,online,US,CA,dev_b62b3697,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000178,card_009,2026-05-04 04:35:15,McDonald's,restaurant,16.13,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000180,card_009,2026-05-04 15:45:03,Tim Hortons,restaurant,9.56,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000177,card_009,2026-05-08 09:44:47,Chipotle,restaurant,57.64,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000168,card_009,2026-05-12 08:13:21,Netflix,subscription,19.99,online,US,US,dev_b62b3697,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000169,card_009,2026-05-13 00:57:04,Etsy,online_retail,8.9,online,US,US,dev_b62b3697,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000179,card_009,2026-05-13 14:26:19,Schwartz's,restaurant,15.6,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000174,card_009,2026-05-14 07:35:38,Amazon.ca,online_retail,34.05,online,US,CA,dev_b62b3697,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000182,card_009,2026-05-16 08:04:57,Netflix,subscription,15.99,online,US,US,dev_b62b3697,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000183,card_009,2026-05-16 20:31:44,AliExpress,online_retail,59.32,online,US,CN,dev_b62b3697,15,Approve,Country mismatch (US card / CN merchant),1.0,1.0,1,0,0,0
+tx_001003,card_009,2026-05-17 14:11:07,QuickPay Online,online_retail,835.4,online,US,CA,dev_6b84a60e,55,Block / Review,"Country mismatch (US card / CA merchant); High-risk merchant, large amount ($835.40); Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,1,1,0,0
+tx_000167,card_009,2026-05-20 21:09:17,McDonald's,restaurant,20.23,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000171,card_009,2026-05-23 12:33:59,Spotify,subscription,9.99,online,US,SE,dev_b62b3697,15,Approve,Country mismatch (US card / SE merchant),1.0,1.0,1,0,0,0
+tx_000176,card_009,2026-05-24 20:36:40,Shopify Merchant 1,online_retail,53.92,online,US,CA,dev_b62b3697,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000198,card_010,2026-04-28 17:05:07,Shell,gas,12.19,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000186,card_010,2026-04-29 05:37:32,McDonald's,restaurant,25.36,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000188,card_010,2026-04-30 09:30:03,BMO ATM,atm,200.0,atm,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000185,card_010,2026-05-01 04:02:15,Cafe Olimpico,restaurant,27.9,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000200,card_010,2026-05-01 11:01:15,Shell,gas,31.84,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000203,card_010,2026-05-04 09:24:00,Cafe Olimpico,restaurant,4.52,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000201,card_010,2026-05-08 09:25:09,AliExpress,online_retail,26.05,online,US,CN,dev_26274369,15,Approve,Country mismatch (US card / CN merchant),1.0,1.0,1,0,0,0
+tx_000204,card_010,2026-05-11 18:51:47,Amazon.com,online_retail,101.04,online,US,US,dev_94ddeaf2,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000197,card_010,2026-05-12 18:59:10,Petro-Canada,gas,42.97,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000196,card_010,2026-05-13 06:10:22,Schwartz's,restaurant,25.45,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000194,card_010,2026-05-14 21:58:18,Chevron,gas,94.84,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000189,card_010,2026-05-15 03:27:00,RBC ATM,atm,20.0,atm,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000202,card_010,2026-05-15 19:29:20,Joe Beef,restaurant,78.76,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000199,card_010,2026-05-18 19:27:17,QuickPay Online,online_retail,8.38,online,US,CA,dev_26274369,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,1,0,0
+tx_000193,card_010,2026-05-18 23:08:46,Cafe Olimpico,restaurant,14.85,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000192,card_010,2026-05-20 13:17:05,Schwartz's,restaurant,53.94,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000184,card_010,2026-05-21 00:47:08,Shell,gas,22.76,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000195,card_010,2026-05-22 06:06:51,Schwartz's,restaurant,40.76,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000190,card_010,2026-05-22 15:40:00,Shopify Merchant 2,online_retail,115.62,online,US,CA,dev_94ddeaf2,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000191,card_010,2026-05-24 01:39:42,McDonald's,restaurant,43.05,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000187,card_010,2026-05-24 20:50:55,Disney+,subscription,15.99,online,US,US,dev_26274369,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000206,card_011,2026-04-25 09:09:03,Chipotle,restaurant,4.85,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000221,card_011,2026-04-27 14:25:17,La Banquise,restaurant,83.08,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000210,card_011,2026-04-29 08:37:18,Shell,gas,4.13,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000219,card_011,2026-05-01 11:42:00,Disney+,subscription,15.99,online,CA,US,dev_7b8b43cb,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000218,card_011,2026-05-03 21:58:53,Bell Canada,utilities,14.09,online,CA,CA,dev_292af7e9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000213,card_011,2026-05-04 23:53:57,Schwartz's,restaurant,21.39,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000215,card_011,2026-05-05 13:58:57,Videotron,utilities,6.15,online,CA,CA,dev_292af7e9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000220,card_011,2026-05-06 05:58:35,Hydro-Quebec,utilities,64.44,online,CA,CA,dev_7b8b43cb,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000214,card_011,2026-05-08 13:48:26,Provigo,grocery,17.36,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000212,card_011,2026-05-11 12:47:36,Joe Beef,restaurant,8.71,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000217,card_011,2026-05-14 08:19:13,Schwartz's,restaurant,9.73,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000216,card_011,2026-05-14 17:22:48,Cineplex,entertainment,12.39,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000222,card_011,2026-05-14 23:35:10,Schwartz's,restaurant,8.26,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000207,card_011,2026-05-19 01:31:18,Cafe Olimpico,restaurant,10.39,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000205,card_011,2026-05-19 17:27:26,McDonald's,restaurant,25.43,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000211,card_011,2026-05-21 15:50:31,Starbucks,restaurant,28.32,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000209,card_011,2026-05-22 17:42:12,Starbucks,restaurant,5.87,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000223,card_011,2026-05-22 20:29:39,Cafe Olimpico,restaurant,6.42,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000208,card_011,2026-05-23 23:52:43,Starbucks,restaurant,8.57,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000226,card_012,2026-04-25 19:32:23,Whole Foods,grocery,27.35,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000231,card_012,2026-04-26 01:41:26,Amazon.com,online_retail,8.84,online,CA,US,dev_08e633ee,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000235,card_012,2026-04-27 14:31:18,QuickPay Online,online_retail,18.72,online,CA,CA,dev_08e633ee,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000224,card_012,2026-05-01 18:17:52,Shopify Merchant 2,online_retail,20.39,online,CA,CA,dev_08e633ee,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000243,card_012,2026-05-02 20:18:56,Etsy,online_retail,13.99,online,CA,US,dev_08e633ee,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000232,card_012,2026-05-04 13:20:24,Cineplex,entertainment,27.15,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000244,card_012,2026-05-04 17:59:57,AliExpress,online_retail,31.96,online,CA,CN,dev_08e633ee,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000234,card_012,2026-05-07 23:23:35,Hydro-Quebec,utilities,14.45,online,CA,CA,dev_08e633ee,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000225,card_012,2026-05-12 03:12:03,Amazon.ca,online_retail,12.64,online,CA,CA,dev_08e633ee,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000238,card_012,2026-05-13 04:36:27,Amazon.com,online_retail,31.56,online,CA,US,dev_08e633ee,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000230,card_012,2026-05-14 16:01:51,Amazon.com,online_retail,15.62,online,CA,US,dev_08e633ee,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000229,card_012,2026-05-15 04:22:15,Shopify Merchant 1,online_retail,20.77,online,CA,CA,dev_08e633ee,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000246,card_012,2026-05-16 02:15:39,Amazon.com,online_retail,10.15,online,CA,US,dev_08e633ee,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000233,card_012,2026-05-19 00:54:36,Videotron,utilities,11.69,online,CA,CA,dev_08e633ee,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000228,card_012,2026-05-19 05:59:52,Shopify Merchant 1,online_retail,25.11,online,CA,CA,dev_08e633ee,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000242,card_012,2026-05-19 06:09:44,Loblaws,grocery,30.52,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,2.0,1.0,0,0,0,0
+tx_000240,card_012,2026-05-19 08:37:31,Amazon.ca,online_retail,24.35,online,CA,CA,dev_08e633ee,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000245,card_012,2026-05-20 07:54:11,QuickPay Online,online_retail,18.98,online,CA,CA,dev_08e633ee,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000239,card_012,2026-05-21 12:03:13,AliExpress,online_retail,14.46,online,CA,CN,dev_08e633ee,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000236,card_012,2026-05-22 13:51:36,Shopify Merchant 1,online_retail,13.01,online,CA,CA,dev_08e633ee,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000237,card_012,2026-05-23 18:59:04,Etsy,online_retail,28.66,online,CA,US,dev_08e633ee,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000227,card_012,2026-05-24 03:52:56,Amazon.com,online_retail,20.76,online,CA,US,dev_08e633ee,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000256,card_013,2026-04-25 04:26:31,Shopify Merchant 2,online_retail,52.73,online,CA,CA,dev_e5c2222f,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000250,card_013,2026-04-26 01:27:49,Hydro-Quebec,utilities,18.19,online,CA,CA,dev_e5c2222f,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000259,card_013,2026-04-28 10:18:21,AliExpress,online_retail,201.67,online,CA,CN,dev_e5c2222f,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000260,card_013,2026-04-30 05:39:05,Etsy,online_retail,76.05,online,CA,US,dev_e5c2222f,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000249,card_013,2026-05-02 14:56:54,eBay,online_retail,14.97,online,CA,US,dev_e5c2222f,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000253,card_013,2026-05-02 15:31:58,Amazon.com,online_retail,65.47,online,CA,US,dev_e5c2222f,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000257,card_013,2026-05-02 18:29:13,Amazon.com,online_retail,44.36,online,CA,US,dev_e5c2222f,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000258,card_013,2026-05-09 19:16:53,Shell,gas,56.3,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000247,card_013,2026-05-12 18:44:22,Chevron,gas,55.77,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000251,card_013,2026-05-14 09:55:57,Bell Canada,utilities,255.96,online,CA,CA,dev_e5c2222f,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000254,card_013,2026-05-19 06:26:18,Netflix,subscription,15.99,online,CA,US,dev_e5c2222f,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000248,card_013,2026-05-19 23:23:05,Amazon.ca,online_retail,23.1,online,CA,CA,dev_e5c2222f,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000252,card_013,2026-05-20 20:36:10,Hydro-Quebec,utilities,39.28,online,CA,CA,dev_e5c2222f,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000255,card_013,2026-05-21 10:01:33,AliExpress,online_retail,24.32,online,CA,CN,dev_e5c2222f,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000274,card_014,2026-04-26 03:12:08,Whole Foods,grocery,39.84,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000268,card_014,2026-04-27 08:51:14,McDonald's,restaurant,10.15,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000264,card_014,2026-05-01 22:04:24,Cafe Olimpico,restaurant,150.51,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000276,card_014,2026-05-02 07:32:05,Amazon.com,online_retail,22.75,online,FR,US,dev_415fec02,15,Approve,Country mismatch (FR card / US merchant),1.0,1.0,1,0,0,0
+tx_000267,card_014,2026-05-03 19:46:48,eBay,online_retail,8.1,online,FR,US,dev_415fec02,15,Approve,Country mismatch (FR card / US merchant),1.0,1.0,1,0,0,0
+tx_000273,card_014,2026-05-05 13:15:01,La Banquise,restaurant,55.68,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000265,card_014,2026-05-07 10:50:21,Provigo,grocery,10.67,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000262,card_014,2026-05-09 11:20:45,Amazon.com,online_retail,5.48,online,FR,US,dev_415fec02,15,Approve,Country mismatch (FR card / US merchant),1.0,1.0,1,0,0,0
+tx_000261,card_014,2026-05-11 06:37:23,Joe Beef,restaurant,51.29,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000275,card_014,2026-05-11 21:29:48,Joe Beef,restaurant,15.13,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000266,card_014,2026-05-15 05:25:42,McDonald's,restaurant,9.21,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000263,card_014,2026-05-15 14:53:25,Shopify Merchant 1,online_retail,7.44,online,FR,CA,dev_7c98f9e4,15,Approve,Country mismatch (FR card / CA merchant),1.0,1.0,1,0,0,0
+tx_000271,card_014,2026-05-18 04:03:15,Whole Foods,grocery,13.6,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000277,card_014,2026-05-18 08:43:44,Tim Hortons,restaurant,22.72,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000272,card_014,2026-05-20 13:10:14,Provigo,grocery,18.35,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000269,card_014,2026-05-23 06:03:35,Cineplex,entertainment,57.98,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000270,card_014,2026-05-24 20:38:43,Amazon.ca,online_retail,19.81,online,FR,CA,dev_7c98f9e4,15,Approve,Country mismatch (FR card / CA merchant),1.0,1.0,1,0,0,0
+tx_000280,card_015,2026-04-26 23:46:30,Videotron,utilities,32.18,online,CA,CA,dev_22a1b746,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000286,card_015,2026-04-27 05:22:43,Cafe Olimpico,restaurant,58.15,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000292,card_015,2026-04-28 18:21:34,Shell,gas,76.91,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000289,card_015,2026-04-28 20:45:17,Esso,gas,30.31,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000294,card_015,2026-04-30 20:40:28,AliExpress,online_retail,19.15,online,CA,CN,dev_22a1b746,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000284,card_015,2026-04-30 21:33:04,Videotron,utilities,58.27,online,CA,CA,dev_22a1b746,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000287,card_015,2026-05-01 14:35:22,Cafe Olimpico,restaurant,10.04,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000283,card_015,2026-05-02 05:56:09,Joe Beef,restaurant,104.78,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000293,card_015,2026-05-02 23:32:10,Cafe Olimpico,restaurant,34.75,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000285,card_015,2026-05-03 02:26:12,Starbucks,restaurant,32.62,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000279,card_015,2026-05-03 09:25:58,Cafe Olimpico,restaurant,113.81,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000288,card_015,2026-05-03 16:31:07,Esso,gas,140.74,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000282,card_015,2026-05-06 20:46:28,QuickPay Online,online_retail,57.71,online,CA,CA,dev_22a1b746,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000278,card_015,2026-05-10 12:53:45,Starbucks,restaurant,46.65,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000281,card_015,2026-05-16 17:17:36,Amazon.com,online_retail,48.95,online,CA,US,dev_22a1b746,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000295,card_015,2026-05-21 04:30:11,Videotron,utilities,78.98,online,CA,CA,dev_22a1b746,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000290,card_015,2026-05-23 06:07:53,Videotron,utilities,102.6,online,CA,CA,dev_22a1b746,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000296,card_015,2026-05-24 02:07:06,Etsy,online_retail,23.86,online,CA,US,dev_22a1b746,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000291,card_015,2026-05-24 18:57:21,Esso,gas,19.89,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000310,card_016,2026-04-30 05:08:49,Metro,grocery,25.62,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000307,card_016,2026-05-01 19:08:41,Videotron,utilities,31.21,online,CA,CA,dev_bc979ff9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000306,card_016,2026-05-03 04:44:53,Netflix,subscription,15.99,online,CA,US,dev_bc979ff9,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000308,card_016,2026-05-07 20:09:52,Videotron,utilities,24.36,online,CA,CA,dev_bc979ff9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000311,card_016,2026-05-08 03:32:58,Loblaws,grocery,126.47,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000300,card_016,2026-05-08 05:50:28,Loblaws,grocery,22.69,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000303,card_016,2026-05-13 05:34:56,Hydro-Quebec,utilities,140.17,online,CA,CA,dev_bc979ff9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000297,card_016,2026-05-13 15:22:12,Provigo,grocery,65.21,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000298,card_016,2026-05-14 14:05:33,Petro-Canada,gas,24.01,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000302,card_016,2026-05-16 08:15:05,Cineplex,entertainment,109.2,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000305,card_016,2026-05-16 10:56:19,Disney+,subscription,9.99,online,CA,US,dev_bc979ff9,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000986,card_016,2026-05-17 21:00:00,Gift Card Mall,gift_card,1157.81,online,CA,US,dev_7bbcb493,75,Block / Review,"Country mismatch (CA card / US merchant); High-risk merchant, large amount ($1157.81); Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,1,1,0,0
+tx_000987,card_016,2026-05-17 21:40:52,Apple Gift Card,gift_card,1511.01,online,CA,US,dev_7bbcb493,140,Block / Review,"Country mismatch (CA card / US merchant); High-risk merchant, large amount ($1511.01); Gift card burst: 2 purchases, $2668.82 in 2 h; Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,1,1,0,0
+tx_000301,card_016,2026-05-18 21:12:02,IGA,grocery,59.15,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000304,card_016,2026-05-19 04:44:14,Shell,gas,71.31,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000920,card_016,2026-05-19 08:43:15,Apple Store,electronics,1900.28,in_person,CA,CA,PHYSICAL_STORE,95,Block / Review,"High-risk merchant, large amount ($1900.28)",1.0,1.0,0,1,0,0
+tx_000299,card_016,2026-05-20 18:34:44,Bell Canada,utilities,106.0,online,CA,CA,dev_bc979ff9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000309,card_016,2026-05-22 16:16:23,Cineplex,entertainment,44.01,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000317,card_017,2026-04-26 06:53:42,Cafe Olimpico,restaurant,9.3,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000316,card_017,2026-04-26 12:12:06,Starbucks,restaurant,22.57,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000319,card_017,2026-04-26 17:26:44,Desjardins ATM,atm,80.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000321,card_017,2026-04-29 13:47:48,RBC ATM,atm,200.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000325,card_017,2026-04-29 19:01:27,eBay,online_retail,11.04,online,CA,US,dev_d0ff1fad,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000324,card_017,2026-05-03 20:42:20,Shopify Merchant 2,online_retail,194.41,online,CA,CA,dev_d0ff1fad,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000320,card_017,2026-05-05 08:06:45,Provigo,grocery,6.35,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000327,card_017,2026-05-06 06:37:29,Videotron,utilities,82.19,online,CA,CA,dev_d0ff1fad,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000312,card_017,2026-05-08 04:38:23,AliExpress,online_retail,8.23,online,CA,CN,dev_d0ff1fad,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000322,card_017,2026-05-09 11:02:07,Shopify Merchant 1,online_retail,21.83,online,CA,CA,dev_d0ff1fad,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000313,card_017,2026-05-10 23:52:41,Joe Beef,restaurant,31.47,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000315,card_017,2026-05-13 09:27:59,Loblaws,grocery,12.06,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000326,card_017,2026-05-13 11:29:29,Starbucks,restaurant,11.07,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000314,card_017,2026-05-14 10:18:17,Schwartz's,restaurant,14.67,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000318,card_017,2026-05-15 02:20:54,Shopify Merchant 1,online_retail,15.63,online,CA,CA,dev_d0ff1fad,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000328,card_017,2026-05-15 17:01:31,RBC ATM,atm,80.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000323,card_017,2026-05-19 21:46:55,RBC ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000329,card_018,2026-04-29 08:30:47,BMO ATM,atm,20.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000342,card_018,2026-05-02 06:24:38,Desjardins ATM,atm,60.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000331,card_018,2026-05-07 23:03:21,McDonald's,restaurant,22.44,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000333,card_018,2026-05-08 12:00:57,Tim Hortons,restaurant,16.17,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000343,card_018,2026-05-08 21:26:55,Cafe Olimpico,restaurant,41.8,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000344,card_018,2026-05-09 07:46:14,RBC ATM,atm,100.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000339,card_018,2026-05-11 23:57:27,Amazon.com,online_retail,20.99,online,CA,US,dev_b6cde5be,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000338,card_018,2026-05-14 00:09:43,Whole Foods,grocery,44.49,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000341,card_018,2026-05-14 05:15:23,Schwartz's,restaurant,23.25,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000336,card_018,2026-05-14 08:49:20,Joe Beef,restaurant,22.75,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000340,card_018,2026-05-15 06:43:20,Amazon.com,online_retail,19.86,online,CA,US,dev_9153fdea,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000330,card_018,2026-05-15 12:12:47,Desjardins ATM,atm,80.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000337,card_018,2026-05-17 04:08:02,Loblaws,grocery,8.48,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000346,card_018,2026-05-17 09:03:20,Metro,grocery,40.16,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000332,card_018,2026-05-18 02:20:13,eBay,online_retail,38.25,online,CA,US,dev_b6cde5be,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000345,card_018,2026-05-18 09:54:17,eBay,online_retail,18.31,online,CA,US,dev_9153fdea,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000334,card_018,2026-05-18 15:31:56,Whole Foods,grocery,30.51,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000335,card_018,2026-05-20 11:09:02,Tim Hortons,restaurant,20.5,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000347,card_018,2026-05-20 15:29:41,Schwartz's,restaurant,33.07,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000992,card_018,2026-05-21 05:00:00,Gift Card Mall,gift_card,1753.33,online,CA,US,dev_8e47e75b,125,Block / Review,"Country mismatch (CA card / US merchant); High-risk merchant, large amount ($1753.33); Micro-probe pattern: prior 3 txs max $33.07, then $1753.33 at Gift Card Mall; Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,1,1,0,1
+tx_000994,card_018,2026-05-21 06:20:52,Apple Gift Card,gift_card,1147.16,online,CA,US,dev_8e47e75b,120,Block / Review,"Country mismatch (CA card / US merchant); High-risk merchant, large amount ($1147.16); Gift card burst: 2 purchases, $2900.49 in 2 h; Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,1,1,0,0
+tx_000993,card_018,2026-05-21 06:46:49,Gift Card Mall,gift_card,1138.68,online,CA,US,dev_8e47e75b,120,Block / Review,"Country mismatch (CA card / US merchant); High-risk merchant, large amount ($1138.68); Gift card burst: 3 purchases, $4039.17 in 2 h; Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,1,1,0,0
+tx_000352,card_019,2026-04-28 06:04:40,Spotify,subscription,15.99,online,CA,SE,dev_95204a30,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000355,card_019,2026-04-28 06:46:21,Spotify,subscription,19.99,online,CA,SE,dev_95204a30,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000348,card_019,2026-04-28 19:47:38,QuickPay Online,online_retail,124.45,online,CA,CA,dev_95204a30,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000350,card_019,2026-05-02 05:10:50,Spotify,subscription,9.99,online,CA,SE,dev_95204a30,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000356,card_019,2026-05-03 12:36:53,Loblaws,grocery,497.46,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000353,card_019,2026-05-04 08:25:24,AliExpress,online_retail,256.48,online,CA,CN,dev_95204a30,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000358,card_019,2026-05-05 02:09:00,Loblaws,grocery,112.72,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000349,card_019,2026-05-06 12:58:27,Provigo,grocery,65.12,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000978,card_019,2026-05-07 01:28:00,Shopify Merchant 2,online_retail,96.81,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000979,card_019,2026-05-07 01:36:00,Apple Gift Card,gift_card,378.05,online,CA,US,dev_bb15d86f,15,Approve,Country mismatch (CA card / US merchant); Unusual pattern detected by ML model (Isolation Forest),2.0,1.0,1,1,0,0
+tx_000363,card_019,2026-05-13 01:36:14,QuickPay Online,online_retail,12.05,online,CA,CA,dev_95204a30,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000365,card_019,2026-05-13 04:22:37,Disney+,subscription,11.99,online,CA,US,dev_95204a30,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000351,card_019,2026-05-15 02:08:41,Shopify Merchant 1,online_retail,107.88,online,CA,CA,dev_95204a30,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000354,card_019,2026-05-16 01:02:58,Whole Foods,grocery,34.67,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000364,card_019,2026-05-17 12:32:58,eBay,online_retail,20.48,online,CA,US,dev_95204a30,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000361,card_019,2026-05-18 23:44:58,AliExpress,online_retail,20.44,online,CA,CN,dev_95204a30,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000367,card_019,2026-05-20 14:29:49,eBay,online_retail,46.05,online,CA,US,dev_95204a30,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000362,card_019,2026-05-20 23:31:38,Disney+,subscription,13.99,online,CA,US,dev_95204a30,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000359,card_019,2026-05-22 07:14:06,Shopify Merchant 1,online_retail,28.46,online,CA,CA,dev_95204a30,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000357,card_019,2026-05-23 09:52:14,Amazon.com,online_retail,46.52,online,CA,US,dev_95204a30,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000366,card_019,2026-05-23 10:23:26,Etsy,online_retail,29.71,online,CA,US,dev_95204a30,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000360,card_019,2026-05-24 18:17:42,Disney+,subscription,11.99,online,CA,US,dev_95204a30,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000389,card_020,2026-04-25 01:39:26,Chipotle,restaurant,57.12,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000390,card_020,2026-04-26 18:24:19,Amazon.ca,online_retail,52.46,online,US,CA,dev_2877f7d9,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000375,card_020,2026-04-26 22:16:36,McDonald's,restaurant,30.11,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000377,card_020,2026-04-28 00:46:14,RBC ATM,atm,40.0,atm,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000385,card_020,2026-04-28 11:12:53,McDonald's,restaurant,5.57,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000372,card_020,2026-04-28 23:03:12,Netflix,subscription,9.99,online,US,US,dev_2877f7d9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000374,card_020,2026-04-30 11:14:21,Shopify Merchant 2,online_retail,13.53,online,US,CA,dev_2877f7d9,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000388,card_020,2026-05-01 00:20:58,AliExpress,online_retail,42.29,online,US,CN,dev_2877f7d9,15,Approve,Country mismatch (US card / CN merchant),1.0,1.0,1,0,0,0
+tx_000378,card_020,2026-05-03 05:53:17,Shell,gas,21.77,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000381,card_020,2026-05-04 23:58:10,Shopify Merchant 2,online_retail,40.67,online,US,CA,dev_2877f7d9,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000368,card_020,2026-05-05 03:06:34,Spotify,subscription,13.99,online,US,SE,dev_2877f7d9,15,Approve,Country mismatch (US card / SE merchant),1.0,1.0,1,0,0,0
+tx_000382,card_020,2026-05-05 20:22:05,Petro-Canada,gas,21.34,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000376,card_020,2026-05-06 09:38:43,Amazon.com,online_retail,21.83,online,US,US,dev_2877f7d9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000384,card_020,2026-05-08 23:13:27,QuickPay Online,online_retail,44.39,online,US,CA,dev_2877f7d9,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,1,0,0
+tx_000373,card_020,2026-05-09 02:47:44,Amazon.com,online_retail,33.64,online,US,US,dev_2877f7d9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000387,card_020,2026-05-14 17:16:28,eBay,online_retail,27.07,online,US,US,dev_2877f7d9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000988,card_020,2026-05-15 00:00:00,Apple Store,electronics,1474.93,online,US,CA,dev_8ce48e70,110,Block / Review,"Country mismatch (US card / CA merchant); High-risk merchant, large amount ($1474.93); Micro-probe pattern: prior 3 txs max $44.39, then $1474.93 at Apple Store; Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,1,1,0,1
+tx_000989,card_020,2026-05-15 00:31:38,Newegg,electronics,425.23,online,US,US,dev_8ce48e70,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000991,card_020,2026-05-15 02:35:51,Newegg,electronics,511.77,online,US,US,dev_8ce48e70,25,Approve,"High-risk merchant, large amount ($511.77)",1.0,1.0,0,1,0,0
+tx_000990,card_020,2026-05-15 03:33:54,Apple Store,electronics,1158.32,online,US,CA,dev_8ce48e70,75,Block / Review,"Country mismatch (US card / CA merchant); High-risk merchant, large amount ($1158.32); Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,1,1,0,0
+tx_000383,card_020,2026-05-15 17:36:08,McDonald's,restaurant,24.5,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000379,card_020,2026-05-20 01:33:44,Chevron,gas,16.09,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000380,card_020,2026-05-21 12:26:41,La Banquise,restaurant,60.54,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000369,card_020,2026-05-22 06:38:43,QuickPay Online,online_retail,71.96,online,US,CA,dev_2877f7d9,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,1,0,0
+tx_000371,card_020,2026-05-24 02:52:26,Disney+,subscription,11.99,online,US,US,dev_2877f7d9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000386,card_020,2026-05-24 07:40:52,Disney+,subscription,15.99,online,US,US,dev_2877f7d9,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000370,card_020,2026-05-24 11:32:23,Shopify Merchant 2,online_retail,61.67,online,US,CA,dev_2877f7d9,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000396,card_021,2026-04-25 12:33:42,Tim Hortons,restaurant,94.87,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000394,card_021,2026-04-25 15:06:17,Etsy,online_retail,19.32,online,CA,US,dev_f61b4d97,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000391,card_021,2026-04-25 19:35:05,Loblaws,grocery,135.46,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000400,card_021,2026-04-26 10:26:35,IGA,grocery,47.99,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000406,card_021,2026-04-26 13:57:43,Metro,grocery,35.82,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000401,card_021,2026-04-26 19:40:54,Cafe Olimpico,restaurant,57.93,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000395,card_021,2026-04-28 13:52:10,Etsy,online_retail,66.91,online,CA,US,dev_f61b4d97,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000397,card_021,2026-04-30 02:04:30,Chipotle,restaurant,39.25,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000410,card_021,2026-05-01 11:27:55,Tim Hortons,restaurant,37.43,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000393,card_021,2026-05-02 06:55:50,Etsy,online_retail,27.82,online,CA,US,dev_f61b4d97,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000403,card_021,2026-05-04 14:43:18,Netflix,subscription,13.99,online,CA,US,dev_f61b4d97,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000408,card_021,2026-05-04 17:57:28,Starbucks,restaurant,21.7,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000398,card_021,2026-05-07 15:19:41,QuickPay Online,online_retail,131.36,online,CA,CA,dev_176def2c,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000392,card_021,2026-05-09 02:23:08,Tim Hortons,restaurant,58.55,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000409,card_021,2026-05-11 00:43:52,Etsy,online_retail,30.12,online,CA,US,dev_176def2c,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000411,card_021,2026-05-11 15:57:40,Provigo,grocery,90.0,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000399,card_021,2026-05-12 07:22:09,AliExpress,online_retail,107.92,online,CA,CN,dev_f61b4d97,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000921,card_021,2026-05-13 13:07:45,Apple Store,electronics,1148.2,in_person,CA,CA,PHYSICAL_STORE,55,Block / Review,"High-risk merchant, large amount ($1148.20); Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,0,1,0,0
+tx_000407,card_021,2026-05-13 19:54:07,La Banquise,restaurant,101.49,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000405,card_021,2026-05-21 19:36:39,La Banquise,restaurant,51.31,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000402,card_021,2026-05-22 05:31:42,Metro,grocery,28.65,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000404,card_021,2026-05-22 05:46:54,Starbucks,restaurant,33.13,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000413,card_022,2026-04-27 06:05:05,Spotify,subscription,15.99,online,CA,SE,dev_7730dc61,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000412,card_022,2026-04-28 00:24:46,Netflix,subscription,15.99,online,CA,US,dev_7730dc61,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000416,card_022,2026-04-29 11:27:14,Schwartz's,restaurant,86.33,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000418,card_022,2026-04-29 19:06:48,Chevron,gas,21.41,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000422,card_022,2026-04-30 06:27:09,Chevron,gas,68.47,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000425,card_022,2026-05-04 08:31:37,Loblaws,grocery,9.27,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000414,card_022,2026-05-04 14:21:39,IGA,grocery,29.27,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000415,card_022,2026-05-06 02:05:06,Joe Beef,restaurant,36.93,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000419,card_022,2026-05-08 19:35:10,Disney+,subscription,11.99,online,CA,US,dev_7730dc61,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000417,card_022,2026-05-15 11:04:16,Desjardins ATM,atm,200.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000421,card_022,2026-05-15 14:46:21,BMO ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000420,card_022,2026-05-16 09:47:05,Starbucks,restaurant,60.43,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000925,card_022,2026-05-18 03:41:43,Starbucks,restaurant,40.73,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000926,card_022,2026-05-18 05:04:01,Cafe Olimpico,restaurant,20.88,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000927,card_022,2026-05-18 06:42:41,RBC ATM,atm,100.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000924,card_022,2026-05-20 19:52:11,Netflix,subscription,15.99,online,CA,US,dev_5b97f233,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000424,card_022,2026-05-20 20:33:41,Whole Foods,grocery,19.55,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000423,card_022,2026-05-21 06:00:45,Metro,grocery,41.84,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000442,card_023,2026-04-25 12:43:20,Whole Foods,grocery,28.79,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000441,card_023,2026-04-26 03:30:40,La Banquise,restaurant,46.32,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000437,card_023,2026-05-01 20:45:43,Chevron,gas,2.82,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000427,card_023,2026-05-01 21:59:21,AliExpress,online_retail,4.34,online,CA,CN,dev_72d3f36b,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000428,card_023,2026-05-03 18:25:12,Amazon.ca,online_retail,39.21,online,CA,CA,dev_72d3f36b,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000434,card_023,2026-05-05 06:25:45,Provigo,grocery,5.73,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000440,card_023,2026-05-06 00:21:24,Provigo,grocery,15.99,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000430,card_023,2026-05-08 13:45:10,La Banquise,restaurant,23.97,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000433,card_023,2026-05-09 14:04:53,Loblaws,grocery,106.9,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000426,card_023,2026-05-11 17:29:46,Shopify Merchant 2,online_retail,14.99,online,CA,CA,dev_72d3f36b,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000429,card_023,2026-05-11 21:46:00,McDonald's,restaurant,10.16,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000939,card_023,2026-05-12 05:12:00,Shopify Merchant 2,online_retail,10.98,online,CA,CA,dev_c71fd72a,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000940,card_023,2026-05-12 05:14:19,QuickPay Online,online_retail,11.58,online,CA,CA,dev_c71fd72a,0,Approve,No flags,2.0,1.0,0,1,0,0
+tx_000941,card_023,2026-05-12 05:15:28,Shopify Merchant 1,online_retail,9.18,online,CA,CA,dev_c71fd72a,0,Approve,No flags,3.0,1.0,0,0,0,0
+tx_000945,card_023,2026-05-12 05:15:31,Shopify Merchant 1,online_retail,2.54,online,CA,CA,dev_c71fd72a,50,Block / Review,High velocity 10 min (4 tx); Extremely high velocity 1 min (2 tx); Unusual pattern detected by ML model (Isolation Forest),4.0,2.0,0,0,0,0
+tx_000942,card_023,2026-05-12 05:15:46,AliExpress,online_retail,7.52,online,CA,CN,dev_c71fd72a,85,Block / Review,High velocity 10 min (5 tx); Extremely high velocity 1 min (3 tx); Country mismatch (CA card / CN merchant); Unusual pattern detected by ML model (Isolation Forest),5.0,3.0,1,0,0,0
+tx_000947,card_023,2026-05-12 05:19:04,Shopify Merchant 1,online_retail,1.5,online,CA,CA,dev_c71fd72a,30,Block / Review,High velocity 10 min (6 tx); Unusual pattern detected by ML model (Isolation Forest),6.0,1.0,0,0,0,0
+tx_000943,card_023,2026-05-12 05:20:11,QuickPay Online,online_retail,10.45,online,CA,CA,dev_c71fd72a,35,Block / Review,High velocity 10 min (7 tx); Unusual pattern detected by ML model (Isolation Forest),7.0,1.0,0,1,0,0
+tx_000944,card_023,2026-05-12 05:27:34,QuickPay Online,online_retail,2.71,online,CA,CA,dev_c71fd72a,0,Approve,Unusual pattern detected by ML model (Isolation Forest),3.0,1.0,0,1,0,0
+tx_000946,card_023,2026-05-12 05:33:26,Shopify Merchant 2,online_retail,3.51,online,CA,CA,dev_c71fd72a,0,Approve,No flags,2.0,1.0,0,0,0,0
+tx_000948,card_023,2026-05-12 05:38:41,AliExpress,online_retail,10.26,online,CA,CN,dev_c71fd72a,15,Approve,Country mismatch (CA card / CN merchant),2.0,1.0,1,0,0,0
+tx_000443,card_023,2026-05-16 22:17:32,eBay,online_retail,6.87,online,CA,US,dev_72d3f36b,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000436,card_023,2026-05-17 12:43:45,AliExpress,online_retail,13.23,online,CA,CN,dev_72d3f36b,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000438,card_023,2026-05-18 05:35:26,eBay,online_retail,12.04,online,CA,US,dev_72d3f36b,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000432,card_023,2026-05-19 22:16:48,La Banquise,restaurant,22.6,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000435,card_023,2026-05-20 16:27:43,eBay,online_retail,79.77,online,CA,US,dev_72d3f36b,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000431,card_023,2026-05-23 09:28:09,Amazon.ca,online_retail,12.76,online,CA,CA,dev_72d3f36b,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000439,card_023,2026-05-23 17:58:53,Amazon.ca,online_retail,24.44,online,CA,CA,dev_72d3f36b,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000456,card_024,2026-04-25 20:54:26,IGA,grocery,54.46,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000454,card_024,2026-04-26 21:13:18,RBC ATM,atm,80.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000448,card_024,2026-04-28 13:18:04,Whole Foods,grocery,37.51,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000460,card_024,2026-05-01 03:11:13,Loblaws,grocery,40.16,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000446,card_024,2026-05-01 09:10:15,Petro-Canada,gas,61.85,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000453,card_024,2026-05-04 04:40:55,Shell,gas,27.68,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000445,card_024,2026-05-04 10:31:07,Provigo,grocery,23.71,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000444,card_024,2026-05-04 15:37:38,Provigo,grocery,23.32,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000447,card_024,2026-05-05 11:32:07,Chevron,gas,42.47,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000452,card_024,2026-05-05 21:33:20,Whole Foods,grocery,17.5,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000459,card_024,2026-05-07 13:19:32,Whole Foods,grocery,77.61,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000458,card_024,2026-05-09 16:18:04,Desjardins ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000451,card_024,2026-05-09 21:06:18,Loblaws,grocery,51.91,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000457,card_024,2026-05-10 10:15:45,Metro,grocery,34.48,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000462,card_024,2026-05-11 19:51:01,BMO ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000450,card_024,2026-05-14 05:06:40,BMO ATM,atm,80.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000461,card_024,2026-05-19 13:29:58,IGA,grocery,17.54,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000449,card_024,2026-05-20 15:40:10,Chevron,gas,30.56,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000455,card_024,2026-05-22 18:50:22,Shell,gas,57.62,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000466,card_025,2026-04-28 05:05:43,Hydro-Quebec,utilities,30.09,online,CA,CA,dev_d9156309,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000476,card_025,2026-04-29 20:36:07,Etsy,online_retail,26.02,online,CA,US,dev_0bded435,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000474,card_025,2026-05-04 01:03:02,Amazon.com,online_retail,10.31,online,CA,US,dev_d9156309,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000479,card_025,2026-05-04 15:20:56,Netflix,subscription,19.99,online,CA,US,dev_d9156309,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000475,card_025,2026-05-05 02:55:58,BMO ATM,atm,20.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000478,card_025,2026-05-07 08:32:38,Disney+,subscription,15.99,online,CA,US,dev_0bded435,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000472,card_025,2026-05-08 23:54:10,Desjardins ATM,atm,200.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000464,card_025,2026-05-11 06:09:21,Disney+,subscription,9.99,online,CA,US,dev_0bded435,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000465,card_025,2026-05-13 20:16:57,Shopify Merchant 1,online_retail,44.8,online,CA,CA,dev_0bded435,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000480,card_025,2026-05-16 09:23:22,eBay,online_retail,45.18,online,CA,US,dev_0bded435,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000470,card_025,2026-05-19 11:34:30,eBay,online_retail,26.95,online,CA,US,dev_0bded435,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000477,card_025,2026-05-19 13:07:23,Spotify,subscription,15.99,online,CA,SE,dev_0bded435,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000471,card_025,2026-05-20 04:59:02,Desjardins ATM,atm,100.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000469,card_025,2026-05-22 08:40:07,Amazon.com,online_retail,41.49,online,CA,US,dev_d9156309,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000473,card_025,2026-05-22 09:26:25,Spotify,subscription,19.99,online,CA,SE,dev_d9156309,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000467,card_025,2026-05-22 17:51:50,Amazon.com,online_retail,38.06,online,CA,US,dev_0bded435,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000468,card_025,2026-05-24 11:18:16,RBC ATM,atm,20.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000487,card_026,2026-04-28 10:15:04,Chipotle,restaurant,36.55,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000490,card_026,2026-04-29 22:08:31,Cineplex,entertainment,22.06,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000496,card_026,2026-04-30 02:41:13,Chipotle,restaurant,73.92,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000495,card_026,2026-05-02 04:44:44,Disney+,subscription,15.99,online,US,US,dev_db3feacf,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000489,card_026,2026-05-03 19:33:31,Starbucks,restaurant,30.88,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000493,card_026,2026-05-04 12:25:41,Shell,gas,22.21,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000485,card_026,2026-05-06 23:06:06,Starbucks,restaurant,32.54,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000488,card_026,2026-05-08 21:24:21,Chevron,gas,8.83,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000481,card_026,2026-05-08 23:23:17,Petro-Canada,gas,41.42,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000484,card_026,2026-05-11 08:06:17,Tim Hortons,restaurant,20.06,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000494,card_026,2026-05-14 07:37:58,Videotron,utilities,35.74,online,US,CA,dev_7b9bf52e,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000483,card_026,2026-05-15 21:08:15,Spotify,subscription,13.99,online,US,SE,dev_db3feacf,15,Approve,Country mismatch (US card / SE merchant),1.0,1.0,1,0,0,0
+tx_000491,card_026,2026-05-15 22:37:37,Videotron,utilities,25.8,online,US,CA,dev_7b9bf52e,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000482,card_026,2026-05-18 19:53:54,Chevron,gas,13.55,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000492,card_026,2026-05-22 22:02:16,Netflix,subscription,15.99,online,US,US,dev_db3feacf,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000486,card_026,2026-05-24 20:43:48,Starbucks,restaurant,21.69,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000499,card_027,2026-04-28 18:05:51,Cineplex,entertainment,132.32,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000497,card_027,2026-04-28 23:56:17,RBC ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000513,card_027,2026-04-30 07:20:40,Starbucks,restaurant,26.97,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000504,card_027,2026-05-01 06:30:33,Metro,grocery,14.91,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000501,card_027,2026-05-01 08:57:20,Esso,gas,38.93,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000515,card_027,2026-05-01 11:10:35,Cineplex,entertainment,7.24,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000505,card_027,2026-05-02 10:03:28,IGA,grocery,21.97,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000512,card_027,2026-05-05 00:18:16,Petro-Canada,gas,33.83,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000516,card_027,2026-05-09 03:26:04,Metro,grocery,122.95,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000514,card_027,2026-05-09 03:30:13,Desjardins ATM,atm,100.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,2.0,1.0,0,0,0,0
+tx_000509,card_027,2026-05-10 02:00:06,Esso,gas,19.82,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000510,card_027,2026-05-10 06:23:57,Schwartz's,restaurant,63.43,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000500,card_027,2026-05-15 13:34:29,Cineplex,entertainment,10.81,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000503,card_027,2026-05-16 04:02:11,RBC ATM,atm,100.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000511,card_027,2026-05-18 10:11:32,RBC ATM,atm,60.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000506,card_027,2026-05-20 14:00:14,Loblaws,grocery,17.83,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000508,card_027,2026-05-21 03:52:42,Bell Canada,utilities,22.37,online,CA,CA,dev_7bf3c924,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000502,card_027,2026-05-23 01:32:21,Joe Beef,restaurant,32.0,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000498,card_027,2026-05-23 13:14:34,RBC ATM,atm,200.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000507,card_027,2026-05-24 11:56:38,Whole Foods,grocery,23.12,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000521,card_028,2026-04-25 09:18:09,eBay,online_retail,51.13,online,CA,US,dev_bea30580,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000533,card_028,2026-04-26 01:13:16,IGA,grocery,102.56,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000520,card_028,2026-04-29 16:27:07,BMO ATM,atm,200.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000536,card_028,2026-04-30 02:15:38,Etsy,online_retail,25.26,online,CA,US,dev_bea30580,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000524,card_028,2026-05-03 16:33:52,eBay,online_retail,45.7,online,CA,US,dev_bea30580,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000534,card_028,2026-05-03 21:07:06,Etsy,online_retail,31.22,online,CA,US,dev_bea30580,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000528,card_028,2026-05-03 22:28:50,Esso,gas,58.1,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000530,card_028,2026-05-05 06:05:49,Shell,gas,75.54,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000529,card_028,2026-05-07 06:51:48,IGA,grocery,126.89,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000522,card_028,2026-05-07 21:50:31,Esso,gas,16.97,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000523,card_028,2026-05-11 22:14:13,BMO ATM,atm,80.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000526,card_028,2026-05-12 23:55:27,Metro,grocery,76.71,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000537,card_028,2026-05-13 17:49:23,Shopify Merchant 1,online_retail,69.47,online,CA,CA,dev_bea30580,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000525,card_028,2026-05-13 19:15:25,AliExpress,online_retail,94.08,online,CA,CN,dev_bea30580,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000527,card_028,2026-05-15 14:52:30,Desjardins ATM,atm,80.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000518,card_028,2026-05-16 06:40:53,Petro-Canada,gas,16.11,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000517,card_028,2026-05-17 04:15:33,Etsy,online_retail,45.63,online,CA,US,dev_bea30580,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000532,card_028,2026-05-19 07:03:14,AliExpress,online_retail,13.33,online,CA,CN,dev_bea30580,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000531,card_028,2026-05-19 07:51:01,IGA,grocery,27.11,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000519,card_028,2026-05-22 01:46:15,Chevron,gas,132.25,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000535,card_028,2026-05-22 08:52:26,Metro,grocery,5.66,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000544,card_029,2026-04-25 08:19:31,Hydro-Quebec,utilities,9.06,online,CA,CA,dev_72eedf3c,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000551,card_029,2026-04-25 08:25:39,Tim Hortons,restaurant,58.77,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,2.0,1.0,0,0,0,0
+tx_000540,card_029,2026-04-26 10:16:59,Amazon.com,online_retail,21.4,online,CA,US,dev_600be23f,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000552,card_029,2026-04-26 20:13:27,Amazon.com,online_retail,3.9,online,CA,US,dev_72eedf3c,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000543,card_029,2026-04-26 23:35:32,Chipotle,restaurant,42.13,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000538,card_029,2026-04-29 13:32:11,Desjardins ATM,atm,80.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000554,card_029,2026-04-30 23:47:05,Disney+,subscription,19.99,online,CA,US,dev_600be23f,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000546,card_029,2026-05-02 16:22:37,Shell,gas,18.18,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000550,card_029,2026-05-10 23:21:01,Etsy,online_retail,18.54,online,CA,US,dev_72eedf3c,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000553,card_029,2026-05-11 14:56:19,BMO ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000549,card_029,2026-05-14 18:56:41,Chevron,gas,115.65,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000555,card_029,2026-05-16 04:46:13,Chevron,gas,9.55,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000548,card_029,2026-05-16 19:06:05,Etsy,online_retail,31.22,online,CA,US,dev_600be23f,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000545,card_029,2026-05-16 19:57:53,Hydro-Quebec,utilities,12.25,online,CA,CA,dev_600be23f,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_001004,card_029,2026-05-17 15:09:02,QuickPay Online,online_retail,724.05,online,CA,CA,dev_d0e72b61,55,Block / Review,"High-risk merchant, large amount ($724.05); Micro-probe pattern: prior 3 txs max $31.22, then $724.05 at QuickPay Online; Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,0,1,0,1
+tx_000547,card_029,2026-05-18 05:20:45,Bell Canada,utilities,19.69,online,CA,CA,dev_600be23f,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000542,card_029,2026-05-19 16:14:26,AliExpress,online_retail,35.82,online,CA,CN,dev_72eedf3c,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000539,card_029,2026-05-22 07:13:58,Shell,gas,38.86,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000556,card_029,2026-05-22 12:24:32,McDonald's,restaurant,47.02,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000541,card_029,2026-05-23 04:59:24,BMO ATM,atm,200.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000570,card_030,2026-04-28 18:57:37,La Banquise,restaurant,11.54,in_person,DE,DE,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000565,card_030,2026-04-30 03:13:51,Joe Beef,restaurant,52.12,in_person,DE,DE,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000563,card_030,2026-04-30 12:28:33,Metro,grocery,44.63,in_person,DE,DE,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000569,card_030,2026-05-02 22:58:15,Shopify Merchant 1,online_retail,27.16,online,DE,CA,dev_f7415d64,15,Approve,Country mismatch (DE card / CA merchant),1.0,1.0,1,0,0,0
+tx_000566,card_030,2026-05-04 04:28:52,Cafe Olimpico,restaurant,92.96,in_person,DE,DE,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000922,card_030,2026-05-06 15:59:37,Best Buy,electronics,696.48,in_person,DE,DE,PHYSICAL_STORE,35,Block / Review,"High-risk merchant, large amount ($696.48); Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,0,1,0,0
+tx_000564,card_030,2026-05-08 03:36:44,Shopify Merchant 1,online_retail,20.87,online,DE,CA,dev_f003a772,15,Approve,Country mismatch (DE card / CA merchant),1.0,1.0,1,0,0,0
+tx_000567,card_030,2026-05-08 20:24:46,Cineplex,entertainment,34.66,in_person,DE,DE,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000568,card_030,2026-05-10 06:52:51,AliExpress,online_retail,39.07,online,DE,CN,dev_f7415d64,15,Approve,Country mismatch (DE card / CN merchant),1.0,1.0,1,0,0,0
+tx_000560,card_030,2026-05-16 17:01:08,McDonald's,restaurant,44.39,in_person,DE,DE,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000557,card_030,2026-05-16 18:53:51,Whole Foods,grocery,19.88,in_person,DE,DE,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_001006,card_030,2026-05-17 14:20:42,QuickPay Online,online_retail,345.74,online,DE,CA,dev_eecda7b1,15,Approve,Country mismatch (DE card / CA merchant),1.0,1.0,1,1,0,0
+tx_000562,card_030,2026-05-17 17:54:19,Starbucks,restaurant,35.55,in_person,DE,DE,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000559,card_030,2026-05-18 03:23:27,La Banquise,restaurant,28.32,in_person,DE,DE,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000561,card_030,2026-05-19 10:21:33,Videotron,utilities,30.9,online,DE,CA,dev_f7415d64,15,Approve,Country mismatch (DE card / CA merchant),1.0,1.0,1,0,0,0
+tx_000558,card_030,2026-05-20 10:24:57,AliExpress,online_retail,31.79,online,DE,CN,dev_f003a772,15,Approve,Country mismatch (DE card / CN merchant),1.0,1.0,1,0,0,0
+tx_000571,card_030,2026-05-21 16:08:05,Tim Hortons,restaurant,32.61,in_person,DE,DE,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000587,card_031,2026-04-26 22:41:09,Metro,grocery,8.58,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000577,card_031,2026-04-27 22:00:32,Bell Canada,utilities,25.75,online,CA,CA,dev_3692eb01,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000580,card_031,2026-04-29 00:22:12,Starbucks,restaurant,67.56,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000573,card_031,2026-04-29 11:33:07,IGA,grocery,33.81,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000579,card_031,2026-05-08 11:10:24,Desjardins ATM,atm,100.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000574,card_031,2026-05-09 07:37:54,Etsy,online_retail,24.44,online,CA,US,dev_3692eb01,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000581,card_031,2026-05-09 07:51:45,IGA,grocery,13.81,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000572,card_031,2026-05-11 10:01:43,Amazon.com,online_retail,56.96,online,CA,US,dev_3692eb01,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000585,card_031,2026-05-13 12:38:51,Cafe Olimpico,restaurant,34.72,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000583,card_031,2026-05-16 01:28:46,RBC ATM,atm,80.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000584,card_031,2026-05-16 15:26:19,McDonald's,restaurant,30.81,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000586,card_031,2026-05-17 08:18:56,Metro,grocery,48.3,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000576,card_031,2026-05-19 08:14:12,Videotron,utilities,57.72,online,CA,CA,dev_3692eb01,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000588,card_031,2026-05-19 23:10:32,RBC ATM,atm,60.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000575,card_031,2026-05-20 12:51:58,Amazon.ca,online_retail,10.07,online,CA,CA,dev_e92d5721,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000578,card_031,2026-05-20 21:14:19,La Banquise,restaurant,54.85,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000582,card_031,2026-05-23 10:17:14,eBay,online_retail,16.37,online,CA,US,dev_e92d5721,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000604,card_032,2026-04-25 20:44:00,Joe Beef,restaurant,28.46,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000595,card_032,2026-05-03 09:37:15,Hydro-Quebec,utilities,53.99,online,CA,CA,dev_52854151,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000996,card_032,2026-05-05 02:15:14,QuickPay Online,online_retail,791.49,online,CA,CA,dev_732bff0c,40,Block / Review,"High-risk merchant, large amount ($791.49); Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,0,1,0,0
+tx_000598,card_032,2026-05-06 19:10:54,Chevron,gas,57.76,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000603,card_032,2026-05-06 20:21:12,La Banquise,restaurant,70.84,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000589,card_032,2026-05-07 12:01:22,Joe Beef,restaurant,31.76,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000602,card_032,2026-05-11 02:01:27,Schwartz's,restaurant,29.45,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000600,card_032,2026-05-13 00:07:35,McDonald's,restaurant,31.04,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000594,card_032,2026-05-14 18:46:44,Chipotle,restaurant,52.84,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000591,card_032,2026-05-14 21:24:09,Provigo,grocery,40.94,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000596,card_032,2026-05-15 12:46:40,McDonald's,restaurant,158.28,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000593,card_032,2026-05-17 06:22:30,RBC ATM,atm,60.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000597,card_032,2026-05-19 14:59:41,AliExpress,online_retail,63.02,online,CA,CN,dev_52854151,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000599,card_032,2026-05-20 01:45:18,Desjardins ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000592,card_032,2026-05-20 02:16:42,Tim Hortons,restaurant,108.65,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000601,card_032,2026-05-23 12:08:59,Schwartz's,restaurant,74.54,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000590,card_032,2026-05-24 07:57:46,QuickPay Online,online_retail,92.6,online,CA,CA,dev_52854151,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000608,card_033,2026-04-25 18:35:18,Provigo,grocery,92.02,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000615,card_033,2026-04-26 03:09:13,La Banquise,restaurant,62.5,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000621,card_033,2026-04-28 15:17:04,IGA,grocery,11.94,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000609,card_033,2026-04-29 06:28:45,Tim Hortons,restaurant,69.77,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000612,card_033,2026-04-30 03:04:12,Whole Foods,grocery,15.66,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000619,card_033,2026-05-02 01:32:38,La Banquise,restaurant,35.68,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000623,card_033,2026-05-03 08:54:44,McDonald's,restaurant,32.7,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000607,card_033,2026-05-04 04:38:53,Chevron,gas,21.86,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000613,card_033,2026-05-05 04:33:52,Chipotle,restaurant,220.46,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000616,card_033,2026-05-05 22:20:00,Spotify,subscription,9.99,online,GB,SE,dev_68735e10,15,Approve,Country mismatch (GB card / SE merchant),1.0,1.0,1,0,0,0
+tx_000605,card_033,2026-05-09 21:04:30,Chevron,gas,107.66,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000622,card_033,2026-05-11 11:25:02,Provigo,grocery,20.14,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000618,card_033,2026-05-12 09:01:34,Whole Foods,grocery,23.99,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000610,card_033,2026-05-13 05:30:56,Metro,grocery,35.65,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000617,card_033,2026-05-14 19:48:25,Joe Beef,restaurant,71.49,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000606,card_033,2026-05-15 08:53:35,Cafe Olimpico,restaurant,228.35,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000611,card_033,2026-05-15 21:25:49,La Banquise,restaurant,85.44,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000614,card_033,2026-05-15 23:21:32,Whole Foods,grocery,101.49,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000620,card_033,2026-05-18 10:07:29,Starbucks,restaurant,88.54,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000635,card_034,2026-04-28 03:23:09,AliExpress,online_retail,18.63,online,CA,CN,dev_a0256e48,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000640,card_034,2026-05-01 18:19:20,Cineplex,entertainment,15.17,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000643,card_034,2026-05-01 20:28:51,Disney+,subscription,19.99,online,CA,US,dev_a9c78771,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000642,card_034,2026-05-02 02:26:08,Amazon.com,online_retail,13.76,online,CA,US,dev_a9c78771,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000628,card_034,2026-05-03 18:06:33,Hydro-Quebec,utilities,28.47,online,CA,CA,dev_a0256e48,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000644,card_034,2026-05-04 07:36:18,Amazon.ca,online_retail,8.99,online,CA,CA,dev_a0256e48,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000637,card_034,2026-05-04 10:34:56,QuickPay Online,online_retail,7.33,online,CA,CA,dev_a0256e48,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000638,card_034,2026-05-06 08:38:00,Videotron,utilities,20.99,online,CA,CA,dev_a0256e48,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000624,card_034,2026-05-06 10:32:42,RBC ATM,atm,20.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000627,card_034,2026-05-07 17:52:43,Amazon.ca,online_retail,17.87,online,CA,CA,dev_a0256e48,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000641,card_034,2026-05-08 14:36:32,Desjardins ATM,atm,60.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000631,card_034,2026-05-08 22:43:04,Chevron,gas,7.31,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000626,card_034,2026-05-09 03:24:31,Petro-Canada,gas,24.73,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000633,card_034,2026-05-09 17:34:09,Amazon.com,online_retail,12.76,online,CA,US,dev_a9c78771,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000636,card_034,2026-05-14 14:05:08,Shell,gas,13.51,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000629,card_034,2026-05-14 23:50:48,Bell Canada,utilities,13.81,online,CA,CA,dev_a9c78771,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000630,card_034,2026-05-17 18:58:04,Amazon.com,online_retail,18.8,online,CA,US,dev_a9c78771,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000632,card_034,2026-05-18 07:39:30,Hydro-Quebec,utilities,7.78,online,CA,CA,dev_a0256e48,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000639,card_034,2026-05-21 00:16:34,Shell,gas,13.16,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000634,card_034,2026-05-21 02:02:52,BMO ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000625,card_034,2026-05-23 19:11:48,Shell,gas,13.89,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000649,card_035,2026-04-25 06:16:56,Disney+,subscription,15.99,online,CA,US,dev_37f4b88c,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000651,card_035,2026-04-29 02:03:45,AliExpress,online_retail,71.19,online,CA,CN,dev_37f4b88c,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000656,card_035,2026-05-01 01:11:23,Etsy,online_retail,21.07,online,CA,US,dev_37f4b88c,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000657,card_035,2026-05-01 10:25:58,La Banquise,restaurant,41.4,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000658,card_035,2026-05-04 16:05:56,Netflix,subscription,19.99,online,CA,US,dev_37f4b88c,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000648,card_035,2026-05-07 12:57:48,Disney+,subscription,19.99,online,CA,US,dev_37f4b88c,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000654,card_035,2026-05-08 07:16:30,Joe Beef,restaurant,61.71,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000659,card_035,2026-05-11 16:10:54,Videotron,utilities,29.37,online,CA,CA,dev_37f4b88c,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000652,card_035,2026-05-12 03:23:59,Spotify,subscription,15.99,online,CA,SE,dev_37f4b88c,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000645,card_035,2026-05-12 10:51:55,Disney+,subscription,13.99,online,CA,US,dev_37f4b88c,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000647,card_035,2026-05-15 11:48:47,McDonald's,restaurant,37.14,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000655,card_035,2026-05-16 23:16:52,Netflix,subscription,15.99,online,CA,US,dev_37f4b88c,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000646,card_035,2026-05-20 03:01:33,Disney+,subscription,15.99,online,CA,US,dev_37f4b88c,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000653,card_035,2026-05-21 13:07:33,Starbucks,restaurant,28.88,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000650,card_035,2026-05-22 06:46:14,Amazon.ca,online_retail,54.45,online,CA,CA,dev_37f4b88c,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000680,card_036,2026-04-26 12:47:39,Desjardins ATM,atm,20.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000664,card_036,2026-04-28 04:55:37,Whole Foods,grocery,69.81,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000678,card_036,2026-05-01 04:01:50,Provigo,grocery,49.9,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000665,card_036,2026-05-02 06:48:36,BMO ATM,atm,20.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000670,card_036,2026-05-03 06:52:29,AliExpress,online_retail,78.69,online,CA,CN,dev_b7bc6824,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000677,card_036,2026-05-05 04:14:10,Chevron,gas,32.19,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000662,card_036,2026-05-06 18:23:50,BMO ATM,atm,20.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000661,card_036,2026-05-08 04:22:19,Shopify Merchant 2,online_retail,50.92,online,CA,CA,dev_f8ffc747,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000667,card_036,2026-05-08 16:43:56,AliExpress,online_retail,25.09,online,CA,CN,dev_b7bc6824,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000663,card_036,2026-05-09 05:13:50,Esso,gas,79.04,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000676,card_036,2026-05-09 17:29:19,Chevron,gas,28.46,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000660,card_036,2026-05-09 21:32:59,IGA,grocery,44.21,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000674,card_036,2026-05-10 13:08:32,RBC ATM,atm,200.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000679,card_036,2026-05-11 11:27:52,QuickPay Online,online_retail,96.35,online,CA,CA,dev_b7bc6824,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000669,card_036,2026-05-11 12:01:14,eBay,online_retail,83.4,online,CA,US,dev_f8ffc747,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000672,card_036,2026-05-14 02:17:47,Shell,gas,22.8,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000666,card_036,2026-05-15 08:37:50,Petro-Canada,gas,87.55,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_001001,card_036,2026-05-17 14:53:49,QuickPay Online,online_retail,426.59,online,CA,CA,dev_d77b2e23,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000668,card_036,2026-05-18 04:07:04,Disney+,subscription,13.99,online,CA,US,dev_b7bc6824,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000923,card_036,2026-05-19 16:17:03,Air Canada,travel,614.82,online,CA,CA,dev_f8ffc747,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000675,card_036,2026-05-20 20:25:56,IGA,grocery,36.55,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000671,card_036,2026-05-21 05:58:39,Amazon.ca,online_retail,54.73,online,CA,CA,dev_b7bc6824,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000673,card_036,2026-05-23 08:54:03,Spotify,subscription,13.99,online,CA,SE,dev_f8ffc747,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000690,card_037,2026-04-25 11:27:41,IGA,grocery,41.39,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000702,card_037,2026-04-25 17:37:25,Tim Hortons,restaurant,16.88,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000695,card_037,2026-04-29 19:01:35,IGA,grocery,36.67,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000689,card_037,2026-04-30 00:26:40,Cafe Olimpico,restaurant,27.13,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000685,card_037,2026-04-30 13:45:22,La Banquise,restaurant,93.03,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000693,card_037,2026-04-30 18:40:32,Cineplex,entertainment,109.99,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000692,card_037,2026-05-01 03:28:36,Shell,gas,34.9,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000694,card_037,2026-05-01 15:51:14,Loblaws,grocery,62.35,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000701,card_037,2026-05-02 08:30:19,Esso,gas,180.46,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000681,card_037,2026-05-03 05:01:00,Shell,gas,58.44,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000682,card_037,2026-05-04 23:53:17,Schwartz's,restaurant,29.52,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_001000,card_037,2026-05-05 02:19:23,QuickPay Online,online_retail,399.49,online,CA,CA,dev_ab552458,30,Block / Review,Impossible travel: GB → CA in 2.4 h; Unusual pattern detected by ML model (Isolation Forest),1.0,1.0,0,1,1,0
+tx_000699,card_037,2026-05-05 03:19:21,Videotron,utilities,111.31,online,GB,CA,dev_9abdb3fd,45,Approve,Country mismatch (GB card / CA merchant); Impossible travel: CA → GB in 1.0 h,1.0,1.0,1,0,1,0
+tx_000686,card_037,2026-05-06 13:59:52,Videotron,utilities,23.83,online,GB,CA,dev_7dfb8438,15,Approve,Country mismatch (GB card / CA merchant),1.0,1.0,1,0,0,0
+tx_000698,card_037,2026-05-10 05:05:42,McDonald's,restaurant,174.12,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000684,card_037,2026-05-11 03:42:56,Cafe Olimpico,restaurant,49.58,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000688,card_037,2026-05-14 04:00:20,McDonald's,restaurant,112.32,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000703,card_037,2026-05-16 22:39:12,Provigo,grocery,92.86,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_001005,card_037,2026-05-17 14:10:26,QuickPay Online,online_retail,311.05,online,CA,CA,dev_f51148d2,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000691,card_037,2026-05-18 08:40:23,Shell,gas,52.58,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000687,card_037,2026-05-20 07:03:42,Provigo,grocery,23.22,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000696,card_037,2026-05-20 21:03:48,Esso,gas,43.98,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000700,card_037,2026-05-21 01:21:09,Starbucks,restaurant,17.65,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000697,card_037,2026-05-21 08:50:07,Cineplex,entertainment,212.16,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000683,card_037,2026-05-24 22:48:39,Joe Beef,restaurant,17.67,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000705,card_038,2026-04-27 04:29:44,La Banquise,restaurant,11.71,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000717,card_038,2026-04-27 15:22:21,Starbucks,restaurant,17.43,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000711,card_038,2026-04-28 22:32:05,Cafe Olimpico,restaurant,21.29,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000709,card_038,2026-04-30 15:40:45,Cineplex,entertainment,15.88,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000716,card_038,2026-05-03 09:45:08,Tim Hortons,restaurant,30.75,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000714,card_038,2026-05-04 21:40:13,Metro,grocery,20.28,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000997,card_038,2026-05-05 02:45:19,QuickPay Online,online_retail,356.29,online,CA,CA,dev_9a5131ce,0,Approve,Unusual pattern detected by ML model (Isolation Forest),1.0,1.0,0,1,0,0
+tx_000712,card_038,2026-05-08 17:45:53,Loblaws,grocery,30.99,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000720,card_038,2026-05-09 15:32:10,Starbucks,restaurant,14.31,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000968,card_038,2026-05-11 13:46:00,Shopify Merchant 1,online_retail,11.21,online,CA,CA,dev_52f96bdf,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000969,card_038,2026-05-11 13:49:16,AliExpress,online_retail,4.68,online,CA,CN,dev_52f96bdf,15,Approve,Country mismatch (CA card / CN merchant),2.0,1.0,1,0,0,0
+tx_000970,card_038,2026-05-11 13:52:42,Shopify Merchant 1,online_retail,5.72,online,CA,CA,dev_52f96bdf,0,Approve,No flags,3.0,1.0,0,0,0,0
+tx_000977,card_038,2026-05-11 13:53:16,Shopify Merchant 2,online_retail,5.39,online,CA,CA,dev_52f96bdf,50,Block / Review,High velocity 10 min (4 tx); Extremely high velocity 1 min (2 tx); Unusual pattern detected by ML model (Isolation Forest),4.0,2.0,0,0,0,0
+tx_000971,card_038,2026-05-11 13:53:38,Shopify Merchant 1,online_retail,3.64,online,CA,CA,dev_52f96bdf,70,Block / Review,High velocity 10 min (5 tx); Extremely high velocity 1 min (3 tx); Unusual pattern detected by ML model (Isolation Forest),5.0,3.0,0,0,0,0
+tx_000972,card_038,2026-05-11 13:56:05,Shopify Merchant 1,online_retail,11.41,online,CA,CA,dev_52f96bdf,25,Approve,High velocity 10 min (5 tx); Unusual pattern detected by ML model (Isolation Forest),5.0,1.0,0,0,0,0
+tx_000973,card_038,2026-05-11 14:00:25,Shopify Merchant 2,online_retail,2.7,online,CA,CA,dev_52f96bdf,25,Approve,High velocity 10 min (5 tx); Unusual pattern detected by ML model (Isolation Forest),5.0,1.0,0,0,0,0
+tx_000974,card_038,2026-05-11 14:04:25,Shopify Merchant 1,online_retail,11.57,online,CA,CA,dev_52f96bdf,0,Approve,No flags,3.0,1.0,0,0,0,0
+tx_000976,card_038,2026-05-11 14:06:56,Shopify Merchant 1,online_retail,4.17,online,CA,CA,dev_52f96bdf,0,Approve,No flags,3.0,1.0,0,0,0,0
+tx_000975,card_038,2026-05-11 14:08:47,AliExpress,online_retail,11.32,online,CA,CN,dev_52f96bdf,35,Block / Review,High velocity 10 min (4 tx); Country mismatch (CA card / CN merchant); Unusual pattern detected by ML model (Isolation Forest),4.0,1.0,1,0,0,0
+tx_000708,card_038,2026-05-12 06:53:25,La Banquise,restaurant,12.99,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000715,card_038,2026-05-13 05:45:54,Shell,gas,35.41,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000710,card_038,2026-05-14 01:45:38,Cafe Olimpico,restaurant,22.71,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000721,card_038,2026-05-15 16:45:55,Chipotle,restaurant,25.38,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000719,card_038,2026-05-18 05:31:29,Cafe Olimpico,restaurant,38.92,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000718,card_038,2026-05-18 08:19:14,La Banquise,restaurant,15.0,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000706,card_038,2026-05-20 05:28:59,Petro-Canada,gas,6.9,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000704,card_038,2026-05-22 02:28:32,BMO ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000707,card_038,2026-05-24 07:01:54,Disney+,subscription,15.99,online,CA,US,dev_9b386adc,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000713,card_038,2026-05-24 10:48:35,Cineplex,entertainment,20.91,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000735,card_039,2026-04-25 20:15:06,Joe Beef,restaurant,8.6,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000731,card_039,2026-04-29 05:10:34,Bell Canada,utilities,38.44,online,GB,CA,dev_2ab5d40f,15,Approve,Country mismatch (GB card / CA merchant),1.0,1.0,1,0,0,0
+tx_000727,card_039,2026-04-30 21:54:38,Shopify Merchant 1,online_retail,9.39,online,GB,CA,dev_2ab5d40f,15,Approve,Country mismatch (GB card / CA merchant),1.0,1.0,1,0,0,0
+tx_000729,card_039,2026-05-03 05:15:15,Tim Hortons,restaurant,15.36,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000999,card_039,2026-05-05 03:22:40,QuickPay Online,online_retail,370.5,online,GB,CA,dev_b4734afd,15,Approve,Country mismatch (GB card / CA merchant); Unusual pattern detected by ML model (Isolation Forest),1.0,1.0,1,1,0,0
+tx_000737,card_039,2026-05-07 14:17:33,IGA,grocery,6.52,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000733,card_039,2026-05-13 05:15:27,Amazon.ca,online_retail,46.27,online,GB,CA,dev_2ab5d40f,15,Approve,Country mismatch (GB card / CA merchant),1.0,1.0,1,0,0,0
+tx_000738,card_039,2026-05-14 09:11:41,Chipotle,restaurant,27.57,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000736,card_039,2026-05-14 18:00:23,IGA,grocery,6.59,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000725,card_039,2026-05-16 06:35:39,Shell,gas,8.29,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000724,card_039,2026-05-16 09:04:37,Metro,grocery,16.53,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000734,card_039,2026-05-20 20:23:03,Chevron,gas,10.42,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000732,card_039,2026-05-21 00:05:37,Videotron,utilities,31.21,online,GB,CA,dev_2ab5d40f,15,Approve,Country mismatch (GB card / CA merchant),1.0,1.0,1,0,0,0
+tx_000728,card_039,2026-05-21 17:34:46,Netflix,subscription,19.99,online,GB,US,dev_a07baaec,15,Approve,Country mismatch (GB card / US merchant),1.0,1.0,1,0,0,0
+tx_000730,card_039,2026-05-22 01:50:24,Starbucks,restaurant,22.42,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000723,card_039,2026-05-24 03:07:35,eBay,online_retail,7.53,online,GB,US,dev_2ab5d40f,15,Approve,Country mismatch (GB card / US merchant),1.0,1.0,1,0,0,0
+tx_000726,card_039,2026-05-24 17:34:40,Amazon.ca,online_retail,21.06,online,GB,CA,dev_2ab5d40f,15,Approve,Country mismatch (GB card / CA merchant),1.0,1.0,1,0,0,0
+tx_000722,card_039,2026-05-24 19:16:39,IGA,grocery,45.52,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000743,card_040,2026-04-26 12:28:08,Tim Hortons,restaurant,91.1,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000747,card_040,2026-04-26 18:11:02,Cineplex,entertainment,29.49,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000745,card_040,2026-04-27 10:52:57,Schwartz's,restaurant,42.54,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000750,card_040,2026-04-28 04:20:31,Netflix,subscription,9.99,online,CA,US,dev_abd8db53,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000753,card_040,2026-04-30 11:05:20,Petro-Canada,gas,22.28,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000742,card_040,2026-05-01 03:14:35,Netflix,subscription,9.99,online,CA,US,dev_abd8db53,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000752,card_040,2026-05-04 04:31:07,Petro-Canada,gas,128.75,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000755,card_040,2026-05-05 19:05:28,La Banquise,restaurant,5.37,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000759,card_040,2026-05-07 18:46:53,Schwartz's,restaurant,3.46,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000756,card_040,2026-05-08 16:45:32,Netflix,subscription,11.99,online,CA,US,dev_abd8db53,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000749,card_040,2026-05-09 09:18:47,Schwartz's,restaurant,41.5,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000740,card_040,2026-05-09 20:11:49,Cineplex,entertainment,170.53,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000757,card_040,2026-05-10 17:34:59,Shell,gas,5.95,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000748,card_040,2026-05-15 04:58:29,Chevron,gas,11.74,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000744,card_040,2026-05-15 23:43:02,Chevron,gas,36.57,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000746,card_040,2026-05-17 09:24:07,Cineplex,entertainment,23.52,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_001007,card_040,2026-05-17 15:20:50,QuickPay Online,online_retail,579.49,online,CA,CA,dev_fe70507a,50,Block / Review,"High-risk merchant, large amount ($579.49); Micro-probe pattern: prior 3 txs max $36.57, then $579.49 at QuickPay Online; Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,0,1,0,1
+tx_000739,card_040,2026-05-18 16:55:07,Shell,gas,17.93,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000741,card_040,2026-05-18 23:27:55,Tim Hortons,restaurant,58.56,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000751,card_040,2026-05-19 02:02:03,Netflix,subscription,13.99,online,CA,US,dev_abd8db53,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000758,card_040,2026-05-20 10:34:33,Joe Beef,restaurant,10.19,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000754,card_040,2026-05-23 09:34:28,Joe Beef,restaurant,10.09,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000779,card_041,2026-04-25 02:38:38,Videotron,utilities,15.86,online,CA,CA,dev_614ef198,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000770,card_041,2026-04-26 13:04:38,Petro-Canada,gas,374.46,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000765,card_041,2026-04-27 08:03:19,Spotify,subscription,15.99,online,CA,SE,dev_614ef198,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000764,card_041,2026-04-27 19:47:46,Loblaws,grocery,85.73,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000768,card_041,2026-05-02 17:14:43,Whole Foods,grocery,11.93,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000761,card_041,2026-05-03 12:38:15,Cineplex,entertainment,43.26,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000771,card_041,2026-05-05 16:22:09,Disney+,subscription,9.99,online,CA,US,dev_614ef198,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000760,card_041,2026-05-06 20:12:49,Chipotle,restaurant,37.45,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000774,card_041,2026-05-09 18:41:55,Schwartz's,restaurant,471.21,in_person,CA,CA,PHYSICAL_STORE,20,Approve,"Micro-probe pattern: prior 3 txs max $43.26, then $471.21 at Schwartz's; Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,0,0,0,1
+tx_000778,card_041,2026-05-10 12:05:43,Tim Hortons,restaurant,69.94,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000766,card_041,2026-05-10 14:54:25,Cineplex,entertainment,475.35,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000776,card_041,2026-05-12 09:04:18,McDonald's,restaurant,6.35,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000767,card_041,2026-05-15 04:47:49,Disney+,subscription,13.99,online,CA,US,dev_614ef198,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000775,card_041,2026-05-19 04:52:43,Tim Hortons,restaurant,15.27,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000763,card_041,2026-05-20 01:43:35,Metro,grocery,26.41,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000762,card_041,2026-05-22 23:01:44,Netflix,subscription,11.99,online,CA,US,dev_614ef198,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000773,card_041,2026-05-24 08:15:13,Metro,grocery,24.96,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000772,card_041,2026-05-24 08:20:43,Shell,gas,71.29,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,2.0,1.0,0,0,0,0
+tx_000777,card_041,2026-05-24 14:35:20,Videotron,utilities,140.25,online,CA,CA,dev_614ef198,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000769,card_041,2026-05-24 18:41:39,Disney+,subscription,15.99,online,CA,US,dev_614ef198,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000784,card_042,2026-04-25 00:27:09,Amazon.ca,online_retail,18.38,online,US,CA,dev_33892b01,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000782,card_042,2026-04-25 09:03:20,Chipotle,restaurant,9.66,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000783,card_042,2026-04-26 00:12:55,Starbucks,restaurant,29.24,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000800,card_042,2026-04-27 01:18:41,Etsy,online_retail,11.08,online,US,US,dev_33892b01,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000788,card_042,2026-04-28 01:15:32,Whole Foods,grocery,10.98,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000799,card_042,2026-04-29 09:34:00,Schwartz's,restaurant,33.17,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000795,card_042,2026-05-01 03:21:06,Tim Hortons,restaurant,17.35,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000792,card_042,2026-05-02 06:34:52,Joe Beef,restaurant,24.86,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000949,card_042,2026-05-03 10:58:00,Shopify Merchant 2,online_retail,1.4,online,US,CA,dev_c4fb137f,15,Approve,Country mismatch (US card / CA merchant),1.0,1.0,1,0,0,0
+tx_000950,card_042,2026-05-03 11:01:01,AliExpress,online_retail,4.48,online,US,CN,dev_c4fb137f,15,Approve,Country mismatch (US card / CN merchant),2.0,1.0,1,0,0,0
+tx_000951,card_042,2026-05-03 11:01:34,Shopify Merchant 1,online_retail,5.04,online,US,CA,dev_c4fb137f,45,Block / Review,Extremely high velocity 1 min (2 tx); Country mismatch (US card / CA merchant); Unusual pattern detected by ML model (Isolation Forest),3.0,2.0,1,0,0,0
+tx_000953,card_042,2026-05-03 11:05:30,AliExpress,online_retail,14.38,online,US,CN,dev_c4fb137f,35,Block / Review,High velocity 10 min (4 tx); Country mismatch (US card / CN merchant); Unusual pattern detected by ML model (Isolation Forest),4.0,1.0,1,0,0,0
+tx_000952,card_042,2026-05-03 11:07:39,AliExpress,online_retail,7.46,online,US,CN,dev_c4fb137f,40,Block / Review,High velocity 10 min (5 tx); Country mismatch (US card / CN merchant); Unusual pattern detected by ML model (Isolation Forest),5.0,1.0,1,0,0,0
+tx_000955,card_042,2026-05-03 11:11:22,Shopify Merchant 1,online_retail,4.36,online,US,CA,dev_c4fb137f,35,Block / Review,High velocity 10 min (4 tx); Country mismatch (US card / CA merchant); Unusual pattern detected by ML model (Isolation Forest),4.0,1.0,1,0,0,0
+tx_000954,card_042,2026-05-03 11:15:14,QuickPay Online,online_retail,14.27,online,US,CA,dev_c4fb137f,35,Block / Review,High velocity 10 min (4 tx); Country mismatch (US card / CA merchant); Unusual pattern detected by ML model (Isolation Forest),4.0,1.0,1,1,0,0
+tx_000956,card_042,2026-05-03 11:20:20,Shopify Merchant 2,online_retail,2.97,online,US,CA,dev_c4fb137f,15,Approve,Country mismatch (US card / CA merchant),3.0,1.0,1,0,0,0
+tx_000780,card_042,2026-05-03 19:54:30,Tim Hortons,restaurant,98.03,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000796,card_042,2026-05-07 23:48:01,Whole Foods,grocery,26.55,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000790,card_042,2026-05-10 03:12:46,Whole Foods,grocery,18.24,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000785,card_042,2026-05-12 15:17:07,Tim Hortons,restaurant,29.55,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000787,card_042,2026-05-14 06:26:17,Loblaws,grocery,13.57,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000794,card_042,2026-05-14 14:21:31,Joe Beef,restaurant,49.19,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000797,card_042,2026-05-15 02:22:24,Chipotle,restaurant,27.43,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000781,card_042,2026-05-17 00:04:51,Etsy,online_retail,19.69,online,US,US,dev_33892b01,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000793,card_042,2026-05-17 23:37:43,IGA,grocery,32.44,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000789,card_042,2026-05-18 11:57:28,Whole Foods,grocery,71.34,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000786,card_042,2026-05-20 22:37:30,Loblaws,grocery,12.81,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000791,card_042,2026-05-22 17:22:02,Tim Hortons,restaurant,15.65,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000798,card_042,2026-05-23 12:24:50,Schwartz's,restaurant,19.78,in_person,US,US,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000806,card_043,2026-04-26 20:28:43,Shopify Merchant 1,online_retail,16.27,online,CA,CA,dev_c832252e,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000813,card_043,2026-04-28 00:52:11,Cineplex,entertainment,27.3,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000814,card_043,2026-04-30 18:17:28,Videotron,utilities,18.73,online,CA,CA,dev_c832252e,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000815,card_043,2026-05-03 15:42:41,eBay,online_retail,33.98,online,CA,US,dev_c832252e,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000809,card_043,2026-05-04 09:33:39,eBay,online_retail,33.82,online,CA,US,dev_c832252e,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000801,card_043,2026-05-06 09:16:33,Videotron,utilities,12.13,online,CA,CA,dev_c832252e,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000803,card_043,2026-05-06 14:28:59,QuickPay Online,online_retail,11.61,online,CA,CA,dev_c832252e,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000810,card_043,2026-05-10 23:47:27,Amazon.com,online_retail,20.08,online,CA,US,dev_c832252e,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000807,card_043,2026-05-12 13:40:46,Whole Foods,grocery,35.84,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000816,card_043,2026-05-13 18:43:59,Disney+,subscription,13.99,online,CA,US,dev_c832252e,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000817,card_043,2026-05-15 17:34:15,Disney+,subscription,15.99,online,CA,US,dev_c832252e,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000805,card_043,2026-05-16 17:30:35,Hydro-Quebec,utilities,21.73,online,CA,CA,dev_c832252e,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000804,card_043,2026-05-20 03:49:37,Hydro-Quebec,utilities,11.18,online,CA,CA,dev_c832252e,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000808,card_043,2026-05-20 19:02:46,Etsy,online_retail,40.31,online,CA,US,dev_c832252e,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000812,card_043,2026-05-22 05:52:48,IGA,grocery,21.83,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000811,card_043,2026-05-24 17:14:02,Spotify,subscription,9.99,online,CA,SE,dev_c832252e,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000822,card_044,2026-05-03 14:42:05,Provigo,grocery,3.79,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000835,card_044,2026-05-05 14:36:22,Tim Hortons,restaurant,229.88,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000840,card_044,2026-05-05 18:23:29,Etsy,online_retail,21.77,online,GB,US,dev_98e65b27,15,Approve,Country mismatch (GB card / US merchant),1.0,1.0,1,0,0,0
+tx_000830,card_044,2026-05-05 23:34:52,La Banquise,restaurant,51.48,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000832,card_044,2026-05-06 00:54:04,Chipotle,restaurant,18.46,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000828,card_044,2026-05-07 18:15:40,QuickPay Online,online_retail,43.59,online,GB,CA,dev_8ae75196,15,Approve,Country mismatch (GB card / CA merchant),1.0,1.0,1,1,0,0
+tx_000819,card_044,2026-05-07 22:44:48,Metro,grocery,41.33,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000838,card_044,2026-05-08 14:13:24,eBay,online_retail,28.92,online,GB,US,dev_8ae75196,15,Approve,Country mismatch (GB card / US merchant),1.0,1.0,1,0,0,0
+tx_000827,card_044,2026-05-09 07:45:59,Metro,grocery,55.66,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000829,card_044,2026-05-09 13:30:53,RBC ATM,atm,100.0,atm,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000825,card_044,2026-05-09 16:55:37,BMO ATM,atm,40.0,atm,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000839,card_044,2026-05-13 01:53:37,Loblaws,grocery,7.96,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000821,card_044,2026-05-13 15:13:52,Metro,grocery,36.6,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000836,card_044,2026-05-13 22:42:04,Metro,grocery,68.13,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000823,card_044,2026-05-14 21:18:02,Tim Hortons,restaurant,67.16,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000833,card_044,2026-05-15 09:30:48,Shopify Merchant 2,online_retail,143.0,online,GB,CA,dev_98e65b27,15,Approve,Country mismatch (GB card / CA merchant),1.0,1.0,1,0,0,0
+tx_000837,card_044,2026-05-15 13:01:49,Amazon.com,online_retail,140.54,online,GB,US,dev_8ae75196,15,Approve,Country mismatch (GB card / US merchant),1.0,1.0,1,0,0,0
+tx_000831,card_044,2026-05-16 05:58:24,AliExpress,online_retail,10.84,online,GB,CN,dev_8ae75196,15,Approve,Country mismatch (GB card / CN merchant),1.0,1.0,1,0,0,0
+tx_000824,card_044,2026-05-20 01:54:37,QuickPay Online,online_retail,277.64,online,GB,CA,dev_8ae75196,15,Approve,Country mismatch (GB card / CA merchant); Unusual pattern detected by ML model (Isolation Forest),1.0,1.0,1,1,0,0
+tx_000826,card_044,2026-05-21 08:44:32,La Banquise,restaurant,67.93,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000820,card_044,2026-05-22 04:24:14,La Banquise,restaurant,54.65,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000818,card_044,2026-05-23 03:53:51,AliExpress,online_retail,4.56,online,GB,CN,dev_8ae75196,15,Approve,Country mismatch (GB card / CN merchant),1.0,1.0,1,0,0,0
+tx_000834,card_044,2026-05-23 16:05:54,Metro,grocery,176.63,in_person,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000853,card_045,2026-04-25 11:57:46,eBay,online_retail,42.68,online,FR,US,dev_ba413b67,15,Approve,Country mismatch (FR card / US merchant),1.0,1.0,1,0,0,0
+tx_000849,card_045,2026-04-26 12:40:31,QuickPay Online,online_retail,20.83,online,FR,CA,dev_ba413b67,15,Approve,Country mismatch (FR card / CA merchant),1.0,1.0,1,1,0,0
+tx_000848,card_045,2026-04-26 14:56:02,RBC ATM,atm,60.0,atm,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000845,card_045,2026-05-04 02:47:30,Whole Foods,grocery,29.37,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000851,card_045,2026-05-06 07:13:22,Desjardins ATM,atm,200.0,atm,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000843,card_045,2026-05-06 10:25:55,Shopify Merchant 1,online_retail,30.84,online,FR,CA,dev_ba413b67,15,Approve,Country mismatch (FR card / CA merchant),1.0,1.0,1,0,0,0
+tx_000984,card_045,2026-05-06 20:30:00,Tim Hortons,restaurant,17.63,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000985,card_045,2026-05-06 20:57:00,Apple Gift Card,gift_card,1274.84,online,FR,US,dev_458eb503,80,Block / Review,"Country mismatch (FR card / US merchant); High-risk merchant, large amount ($1274.84); Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,1,1,0,0
+tx_000854,card_045,2026-05-07 06:13:23,Desjardins ATM,atm,80.0,atm,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000844,card_045,2026-05-14 07:02:57,Amazon.com,online_retail,22.53,online,FR,US,dev_ba413b67,15,Approve,Country mismatch (FR card / US merchant),1.0,1.0,1,0,0,0
+tx_000852,card_045,2026-05-14 22:25:31,Shopify Merchant 1,online_retail,24.44,online,FR,CA,dev_ba413b67,15,Approve,Country mismatch (FR card / CA merchant),1.0,1.0,1,0,0,0
+tx_000850,card_045,2026-05-15 06:48:03,Desjardins ATM,atm,20.0,atm,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000842,card_045,2026-05-17 17:10:22,Amazon.ca,online_retail,46.74,online,FR,CA,dev_ba413b67,15,Approve,Country mismatch (FR card / CA merchant),1.0,1.0,1,0,0,0
+tx_000930,card_045,2026-05-18 02:34:02,IGA,grocery,42.97,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000931,card_045,2026-05-18 21:40:44,Metro,grocery,39.38,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000846,card_045,2026-05-19 03:15:35,McDonald's,restaurant,29.58,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000929,card_045,2026-05-20 12:24:55,Tim Hortons,restaurant,17.36,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000933,card_045,2026-05-20 19:29:09,Joe Beef,restaurant,52.08,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000928,card_045,2026-05-21 11:23:46,eBay,online_retail,19.91,online,FR,US,dev_ef83b35f,15,Approve,Country mismatch (FR card / US merchant),1.0,1.0,1,0,0,0
+tx_000841,card_045,2026-05-22 07:16:56,Etsy,online_retail,22.29,online,FR,US,dev_ba413b67,15,Approve,Country mismatch (FR card / US merchant),1.0,1.0,1,0,0,0
+tx_000932,card_045,2026-05-24 11:43:50,Shopify Merchant 2,online_retail,17.66,online,FR,CA,dev_ef83b35f,15,Approve,Country mismatch (FR card / CA merchant),1.0,1.0,1,0,0,0
+tx_000847,card_045,2026-05-24 21:17:48,La Banquise,restaurant,39.13,in_person,FR,FR,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000859,card_046,2026-04-30 04:25:34,Disney+,subscription,11.99,online,CA,US,dev_b8fe1cb0,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000862,card_046,2026-04-30 05:38:47,BMO ATM,atm,100.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000855,card_046,2026-04-30 07:29:19,Disney+,subscription,19.99,online,CA,US,dev_1abbf8e4,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000865,card_046,2026-04-30 10:50:59,Disney+,subscription,11.99,online,CA,US,dev_b8fe1cb0,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000998,card_046,2026-05-05 03:27:16,QuickPay Online,online_retail,935.27,online,CA,CA,dev_89fb9c62,45,Block / Review,"High-risk merchant, large amount ($935.27); Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,0,1,0,0
+tx_000856,card_046,2026-05-07 21:10:55,BMO ATM,atm,80.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000858,card_046,2026-05-08 14:33:35,Chipotle,restaurant,15.42,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000864,card_046,2026-05-09 03:06:55,RBC ATM,atm,20.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000869,card_046,2026-05-10 16:42:02,Chipotle,restaurant,56.29,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000868,card_046,2026-05-12 12:43:09,Joe Beef,restaurant,197.49,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000861,card_046,2026-05-14 11:56:33,RBC ATM,atm,200.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000867,card_046,2026-05-18 06:07:30,BMO ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000860,card_046,2026-05-21 14:55:17,Chevron,gas,25.63,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000866,card_046,2026-05-21 22:21:34,Desjardins ATM,atm,100.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000863,card_046,2026-05-22 04:36:04,Starbucks,restaurant,28.92,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000857,card_046,2026-05-22 20:29:35,Spotify,subscription,13.99,online,CA,SE,dev_b8fe1cb0,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000873,card_047,2026-04-25 17:43:45,Hydro-Quebec,utilities,37.03,online,CA,CA,dev_dcad83da,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000870,card_047,2026-04-27 11:37:42,AliExpress,online_retail,50.57,online,CA,CN,dev_dcad83da,15,Approve,Country mismatch (CA card / CN merchant),1.0,1.0,1,0,0,0
+tx_000883,card_047,2026-04-28 01:25:24,Metro,grocery,7.67,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000879,card_047,2026-04-29 23:03:11,Whole Foods,grocery,21.98,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000878,card_047,2026-04-30 07:19:27,eBay,online_retail,12.98,online,CA,US,dev_dcad83da,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000877,card_047,2026-05-01 00:10:37,IGA,grocery,43.8,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000872,card_047,2026-05-01 11:22:25,Shopify Merchant 2,online_retail,13.11,online,CA,CA,dev_dcad83da,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000875,card_047,2026-05-02 13:50:52,Shopify Merchant 1,online_retail,19.73,online,CA,CA,dev_dcad83da,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000881,card_047,2026-05-03 14:25:38,Whole Foods,grocery,90.73,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000880,card_047,2026-05-04 03:10:13,Provigo,grocery,46.05,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000884,card_047,2026-05-04 18:21:08,Shopify Merchant 2,online_retail,6.52,online,CA,CA,dev_dcad83da,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000882,card_047,2026-05-06 02:56:36,Shopify Merchant 1,online_retail,16.52,online,CA,CA,dev_dcad83da,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000876,card_047,2026-05-09 00:51:56,Amazon.com,online_retail,14.73,online,CA,US,dev_dcad83da,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000871,card_047,2026-05-12 19:24:55,eBay,online_retail,22.95,online,CA,US,dev_dcad83da,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000885,card_047,2026-05-13 10:51:52,Amazon.ca,online_retail,141.56,online,CA,CA,dev_dcad83da,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000886,card_047,2026-05-17 22:55:55,Hydro-Quebec,utilities,90.49,online,CA,CA,dev_dcad83da,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000874,card_047,2026-05-22 02:32:26,Amazon.com,online_retail,73.01,online,CA,US,dev_dcad83da,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000897,card_048,2026-04-25 13:55:46,McDonald's,restaurant,9.57,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000896,card_048,2026-04-26 04:40:50,Joe Beef,restaurant,16.42,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000901,card_048,2026-04-26 20:54:08,RBC ATM,atm,40.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000900,card_048,2026-04-30 00:43:15,Cafe Olimpico,restaurant,16.86,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000895,card_048,2026-05-01 02:00:31,Desjardins ATM,atm,80.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000887,card_048,2026-05-01 08:56:44,Amazon.com,online_retail,14.96,online,CA,US,dev_3bbcb503,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000898,card_048,2026-05-02 01:37:03,McDonald's,restaurant,42.09,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000890,card_048,2026-05-07 05:09:05,McDonald's,restaurant,34.23,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000902,card_048,2026-05-09 06:54:29,Amazon.ca,online_retail,14.42,online,CA,CA,dev_3bbcb503,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000893,card_048,2026-05-09 18:22:48,Etsy,online_retail,27.06,online,CA,US,dev_3bbcb503,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000889,card_048,2026-05-12 23:50:45,La Banquise,restaurant,24.39,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000980,card_048,2026-05-17 01:11:00,Bell Canada,utilities,39.92,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000981,card_048,2026-05-17 01:37:00,AliExpress,online_retail,944.8,online,CA,CN,dev_f5f5128b,35,Block / Review,"Country mismatch (CA card / CN merchant); Micro-probe pattern: prior 3 txs max $39.92, then $944.80 at AliExpress; Unusual pattern detected by ML model (Isolation Forest)",1.0,1.0,1,0,0,1
+tx_000888,card_048,2026-05-18 13:38:53,BMO ATM,atm,20.0,atm,GB,GB,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000899,card_048,2026-05-18 15:57:27,QuickPay Online,online_retail,30.82,online,GB,CA,dev_3bbcb503,15,Approve,Country mismatch (GB card / CA merchant),1.0,1.0,1,1,0,0
+tx_000938,card_048,2026-05-20 13:23:24,Bell Canada,utilities,28.03,online,CA,CA,dev_01dc5240,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000894,card_048,2026-05-21 13:42:22,Schwartz's,restaurant,31.11,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000936,card_048,2026-05-21 15:31:41,Amazon.ca,online_retail,22.41,online,CA,CA,dev_01dc5240,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000891,card_048,2026-05-21 21:42:10,Shopify Merchant 1,online_retail,31.72,online,CA,CA,dev_3bbcb503,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000934,card_048,2026-05-22 14:52:23,QuickPay Online,online_retail,15.47,online,CA,CA,dev_01dc5240,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000937,card_048,2026-05-23 10:08:18,BMO ATM,atm,20.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000892,card_048,2026-05-24 08:14:13,McDonald's,restaurant,15.24,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000935,card_048,2026-05-24 20:43:02,Shopify Merchant 1,online_retail,43.64,online,CA,CA,dev_01dc5240,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000914,card_049,2026-04-25 19:49:18,Amazon.ca,online_retail,41.79,online,CA,CA,dev_2d66c302,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000904,card_049,2026-04-26 20:41:09,Shopify Merchant 1,online_retail,22.19,online,CA,CA,dev_2d66c302,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000909,card_049,2026-04-27 16:24:38,Spotify,subscription,9.99,online,CA,SE,dev_2d66c302,15,Approve,Country mismatch (CA card / SE merchant),1.0,1.0,1,0,0,0
+tx_000916,card_049,2026-04-28 12:10:09,Desjardins ATM,atm,60.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000903,card_049,2026-05-04 21:08:19,RBC ATM,atm,100.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000915,card_049,2026-05-08 19:58:44,Amazon.ca,online_retail,67.25,online,CA,CA,dev_2d66c302,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000910,card_049,2026-05-13 01:10:52,Shopify Merchant 1,online_retail,18.46,online,CA,CA,dev_2d66c302,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000957,card_049,2026-05-14 21:46:00,Shopify Merchant 1,online_retail,11.64,online,CA,CA,dev_2520e98b,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000959,card_049,2026-05-14 21:47:14,AliExpress,online_retail,11.1,online,CA,CN,dev_2520e98b,15,Approve,Country mismatch (CA card / CN merchant),2.0,1.0,1,0,0,0
+tx_000958,card_049,2026-05-14 21:47:42,Shopify Merchant 2,online_retail,1.51,online,CA,CA,dev_2520e98b,30,Block / Review,Extremely high velocity 1 min (2 tx); Unusual pattern detected by ML model (Isolation Forest),3.0,2.0,0,0,0,0
+tx_000960,card_049,2026-05-14 21:47:48,QuickPay Online,online_retail,10.9,online,CA,CA,dev_2520e98b,65,Block / Review,High velocity 10 min (4 tx); Extremely high velocity 1 min (3 tx); Unusual pattern detected by ML model (Isolation Forest),4.0,3.0,0,1,0,0
+tx_000963,card_049,2026-05-14 21:50:55,Shopify Merchant 2,online_retail,8.44,online,CA,CA,dev_2520e98b,25,Approve,High velocity 10 min (5 tx); Unusual pattern detected by ML model (Isolation Forest),5.0,1.0,0,0,0,0
+tx_000965,card_049,2026-05-14 21:52:41,AliExpress,online_retail,14.88,online,CA,CN,dev_2520e98b,45,Block / Review,High velocity 10 min (6 tx); Country mismatch (CA card / CN merchant); Unusual pattern detected by ML model (Isolation Forest),6.0,1.0,1,0,0,0
+tx_000962,card_049,2026-05-14 21:59:00,Shopify Merchant 2,online_retail,4.15,online,CA,CA,dev_2520e98b,0,Approve,No flags,3.0,1.0,0,0,0,0
+tx_000961,card_049,2026-05-14 21:59:04,QuickPay Online,online_retail,10.72,online,CA,CA,dev_2520e98b,50,Block / Review,High velocity 10 min (4 tx); Extremely high velocity 1 min (2 tx); Unusual pattern detected by ML model (Isolation Forest),4.0,2.0,0,1,0,0
+tx_000967,card_049,2026-05-14 22:04:31,QuickPay Online,online_retail,12.82,online,CA,CA,dev_2520e98b,0,Approve,Unusual pattern detected by ML model (Isolation Forest),3.0,1.0,0,1,0,0
+tx_000964,card_049,2026-05-14 22:08:56,Shopify Merchant 2,online_retail,9.56,online,CA,CA,dev_2520e98b,20,Approve,High velocity 10 min (4 tx); Unusual pattern detected by ML model (Isolation Forest),4.0,1.0,0,0,0,0
+tx_000966,card_049,2026-05-14 22:11:52,QuickPay Online,online_retail,2.63,online,CA,CA,dev_2520e98b,0,Approve,Unusual pattern detected by ML model (Isolation Forest),3.0,1.0,0,1,0,0
+tx_000905,card_049,2026-05-15 10:42:01,Disney+,subscription,15.99,online,CA,US,dev_2d66c302,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000911,card_049,2026-05-16 02:29:15,RBC ATM,atm,100.0,atm,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000907,card_049,2026-05-16 03:25:33,eBay,online_retail,85.75,online,CA,US,dev_2d66c302,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
+tx_000906,card_049,2026-05-16 04:31:46,Amazon.ca,online_retail,536.35,online,CA,CA,dev_2d66c302,0,Approve,Unusual pattern detected by ML model (Isolation Forest),1.0,1.0,0,0,0,0
+tx_000913,card_049,2026-05-16 04:41:55,QuickPay Online,online_retail,32.77,online,CA,CA,dev_2d66c302,0,Approve,No flags,1.0,1.0,0,1,0,0
+tx_000918,card_049,2026-05-17 00:28:52,Cineplex,entertainment,57.94,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000908,card_049,2026-05-17 03:48:23,Amazon.ca,online_retail,32.46,online,CA,CA,dev_2d66c302,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000912,card_049,2026-05-18 20:12:23,Cineplex,entertainment,35.51,in_person,CA,CA,PHYSICAL_STORE,0,Approve,No flags,1.0,1.0,0,0,0,0
+tx_000919,card_049,2026-05-22 19:54:59,Netflix,subscription,9.99,online,CA,US,dev_2d66c302,15,Approve,Country mismatch (CA card / US merchant),1.0,1.0,1,0,0,0
