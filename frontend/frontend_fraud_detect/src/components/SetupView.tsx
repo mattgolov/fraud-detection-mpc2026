@@ -31,7 +31,7 @@ export default function SetupView() {
 
     try {
       if (isDebugMode) {
-        const mockSessionId = `mock-session-${Date.now()}`;
+        const mockSessionId = 'sess_001';
         sessionStorage.setItem('sessionId', mockSessionId);
         sessionStorage.setItem('reviewerName', reviewerName || 'Anonymous Reviewer');
         setUploadSuccess(true);
