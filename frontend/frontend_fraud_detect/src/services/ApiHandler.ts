@@ -12,7 +12,7 @@ import {
   type CreateSessionResponse,
 } from '../mock/MockApiData';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 const IS_DEBUG_MODE = import.meta.env.VITE_DEBUG === 'true';
 
 interface ApiResponse<T> {
@@ -71,12 +71,17 @@ class ApiHandler {
     }
 
     try {
-      const formData = new FormData();
-      formData.append('file', file);
+      const csvContent = await file.text();
 
       const response = await fetch(`${this.baseUrl}/session/create`, {
         method: 'POST',
-        body: formData,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          csv_content: csvContent,
+          reviewer_name: reviewerName,
+        }),
       });
 
       if (!response.ok) {

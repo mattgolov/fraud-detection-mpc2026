@@ -31,6 +31,7 @@ def load_and_prepare_data(transactions: list) -> pd.DataFrame:
     df = pd.DataFrame(transactions)
 
     df['timestamp'] = pd.to_datetime(df['timestamp'])
+    df['amount'] = df['amount'].astype(float)
     df = df.sort_values(by=['card_id', 'timestamp']).reset_index(drop=True)
 
     df['is_online'] = (df['channel'] == 'online').astype(int)

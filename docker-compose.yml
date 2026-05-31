@@ -1,51 +1,23 @@
 version: '3.9'
 
 services:
-  db:
-    image: postgres:16-alpine
-    container_name: mcphacks_db
-    environment:
-      POSTGRES_USER: ${DB_USER:-frauduser}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-fraudpass123}
-      POSTGRES_DB: ${DB_NAME:-fraud_detect}
-    ports:
-      - "${DB_PORT:-5432}:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-frauduser}"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-    networks:
-      - mcphacks_network
-
   api:
     build:
       context: ./api/API_FRAUD_DETECT
       dockerfile: Dockerfile
     container_name: mcphacks_api
     command: /app/entrypoint.sh
+    env_file:
+      - .env
     environment:
-      DB_ENGINE: ${DB_ENGINE:-django.db.backends.postgresql}
-      DB_NAME: ${DB_NAME:-fraud_detect}
-      DB_USER: ${DB_USER:-frauduser}
-      DB_PASSWORD: ${DB_PASSWORD:-fraudpass123}
-      DB_HOST: ${DB_HOST:-db}
-      DB_PORT: ${DB_PORT:-5432}
-      SECRET_KEY: ${SECRET_KEY:-django-insecure-your-secret-key-change-in-production}
-      DEBUG: ${DEBUG:-False}
-      ALLOWED_HOSTS: ${ALLOWED_HOSTS:-localhost,127.0.0.1,api}
-      CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-http://localhost:5173,http://frontend:5173}
+      DEBUG: ${DEBUG}
+      SECRET_KEY: ${SECRET_KEY}
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS}
+      CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS}
     ports:
-      - "${API_PORT:-8000}:8000"
-    depends_on:
-      db:
-        condition: service_healthy
+      - "${API_PORT}:8000"
     volumes:
       - ./api/API_FRAUD_DETECT:/app
-    networks:
-      - mcphacks_network
     expose:
       - "8000"
 
@@ -54,24 +26,20 @@ services:
       context: ./frontend/frontend_fraud_detect
       dockerfile: Dockerfile
     container_name: mcphacks_frontend
+    env_file:
+      - .env
     environment:
-      VITE_API_URL: ${VITE_API_URL:-http://localhost:8000}
+      VITE_API_URL: ${VITE_API_URL}
     ports:
-      - "${FRONTEND_PORT:-5173}:5173"
+      - "${FRONTEND_PORT}:5173"
     depends_on:
       - api
     volumes:
       - ./frontend/frontend_fraud_detect:/app
-      - /app/node_modules
-    networks:
-      - mcphacks_network
+      - frontend_node_modules:/app/node_modules
     expose:
       - "5173"
 
 volumes:
-  postgres_data:
+  frontend_node_modules:
     driver: local
-
-networks:
-  mcphacks_network:
-    driver: bridge

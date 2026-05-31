@@ -235,7 +235,6 @@ MCPHACKS/
 │
 ├── docker-compose.yml             # Docker Compose orchestration
 ├── .env.template                  # Environment variables template
-├── wait-for-it.sh                # Database readiness check script
 ├── .gitignore
 └── README.md                      # This file
 ```

@@ -3,10 +3,9 @@
 ## ✅ Generated Configuration Files
 
 ### Root Level Files
-- ✅ `docker-compose.yml` - Orchestrates PostgreSQL, Django API, and React frontend services
+- ✅ `docker-compose.yml` - Orchestrates Django API and React frontend services with SQLite
 - ✅ `.env` - Environment variables for local development
 - ✅ `.env.template` - Template for environment configuration
-- ✅ `wait-for-it.sh` - Database readiness check script (executable)
 - ✅ `README.md` - Comprehensive documentation
 
 ### API (Django) Configuration
@@ -42,7 +41,6 @@ docker-compose ps
 
 You should see:
 ```
-mcphacks_db          Up (healthy)
 mcphacks_api         Up
 mcphacks_frontend    Up
 ```
@@ -61,23 +59,19 @@ mcphacks_frontend    Up
 |-----------|----------------|-----------|----------------------|
 | Frontend  | 5173           | 5173      | FRONTEND_PORT        |
 | API       | 8000           | 8000      | API_PORT             |
-| Database  | 5432           | 5432      | DB_PORT              |
 
 ## 📋 Key Features Implemented
 
 ### Docker Compose (`docker-compose.yml`)
-- ✅ Three-service orchestration (db, api, frontend)
-- ✅ Named volume for PostgreSQL data persistence
-- ✅ Health checks for database service
-- ✅ Dependency management (api depends on db, frontend depends on api)
-- ✅ Network isolation with bridge network `mcphacks_network`
+- ✅ Two-service orchestration (api, frontend)
 - ✅ Volume mounts for hot reload during development
+- ✅ Dependency management (frontend depends on api)
+- ✅ Network isolation with bridge network
 
 ### Django API (`api/`)
-- ✅ Environment variable configuration for database connectivity
-- ✅ Dynamic database settings using environment variables
+- ✅ SQLite database configuration
+- ✅ Environment variable configuration for Django settings
 - ✅ CORS support with django-cors-headers
-- ✅ PostgreSQL connectivity with psycopg2
 - ✅ Automatic database migrations on startup
 - ✅ Static file collection
 - ✅ DRF (Django REST Framework) integration
@@ -88,23 +82,16 @@ mcphacks_frontend    Up
 - ✅ Development server with hot reload support
 - ✅ Environment variable support via VITE_API_URL
 
-### Database (`PostgreSQL`)
-- ✅ Alpine-based lightweight image
-- ✅ Named volume `postgres_data` for persistence
-- ✅ Health check monitoring
-- ✅ Configurable credentials via environment variables
+### Database (`SQLite`)
+- ✅ File-based SQLite database (db.sqlite3)
+- ✅ Automatically created and configured by Django
+- ✅ No external database service required
+- ✅ Perfect for development and testing
 
 ## 🌍 Environment Variables Reference
 
 ### Database Configuration
-```
-DB_ENGINE=django.db.backends.postgresql
-DB_NAME=fraud_detect
-DB_USER=frauduser
-DB_PASSWORD=fraudpass123
-DB_HOST=db
-DB_PORT=5432
-```
+SQLite is configured automatically in Django settings - no configuration needed!
 
 ### Django Configuration
 ```
@@ -146,18 +133,16 @@ VITE_API_URL=http://localhost:8000
 ```
 Frontend (React)
     ↓
-API (Django REST) → Environment Variables
+API (Django REST)
     ↓
-PostgreSQL Database (postgres:16-alpine)
+SQLite Database (db.sqlite3)
 ```
 
 ### Database Details
-- **Engine**: PostgreSQL 16 Alpine
-- **Container Name**: mcphacks_db
-- **Default Database**: fraud_detect
-- **Default User**: frauduser
-- **Volume**: postgres_data (named volume for persistence)
-- **Health Check**: pg_isready every 10s
+- **Engine**: SQLite 3
+- **Location**: `/app/db.sqlite3` (inside API container)
+- **Auto-created**: Django handles creation and migrations automatically
+- **File-based**: No separate database service needed
 
 ## 🐛 Troubleshooting Tips
 
@@ -168,9 +153,9 @@ PostgreSQL Database (postgres:16-alpine)
 4. Rebuild images: `docker-compose build --no-cache`
 
 ### If database connection fails:
-1. Verify DB_HOST=db (when using Docker)
-2. Check database health: `docker-compose ps`
-3. Wait for health check to pass (may take 10-15 seconds)
+1. Migrations are run automatically on container startup
+2. Check API logs: `docker-compose logs api`
+3. SQLite database file is created automatically at `/app/db.sqlite3`
 
 ### If frontend can't reach API:
 1. Verify API is running: `docker-compose logs api`
@@ -185,21 +170,22 @@ Before deploying to production:
 - [ ] Set `DEBUG=False`
 - [ ] Update `ALLOWED_HOSTS` with production domain
 - [ ] Update `CORS_ALLOWED_ORIGINS` with production domain
-- [ ] Use environment-specific database (AWS RDS, etc.)
+- [ ] Configure persistent volume for SQLite database backup
 - [ ] Configure SSL/TLS certificates
 - [ ] Set up reverse proxy (nginx/Apache)
-- [ ] Configure backup strategy for database
+- [ ] Configure backup strategy for database file
 - [ ] Set up monitoring and logging
 - [ ] Configure CI/CD pipeline
 - [ ] Run security audit
 - [ ] Load test the application
+- [ ] Consider migrating to PostgreSQL or another managed database for production
 
 ## 📚 Additional Resources
 
 - Docker Documentation: https://docs.docker.com/
 - Django Documentation: https://docs.djangoproject.com/
 - React/Vite Documentation: https://vitejs.dev/
-- PostgreSQL Documentation: https://www.postgresql.org/docs/
+- SQLite Documentation: https://www.sqlite.org/docs.html
 
 ---
 

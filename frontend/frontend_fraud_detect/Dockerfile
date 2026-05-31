@@ -1,33 +1,14 @@
-# Multi-stage build for optimized production image
-FROM node:20-alpine as builder
+FROM node:20-alpine
 
 WORKDIR /app
 
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm ci
+# Install dependencies with npm install (more reliable than ci for dev environments)
+RUN npm install
 
 # Copy source code
-COPY . .
-
-# Build the Vite app
-RUN npm run build
-
-# Production image
-FROM node:20-alpine
-
-WORKDIR /app
-
-# Install all dependencies (including dev deps for vite)
-COPY package*.json ./
-RUN npm ci
-
-# Copy built application from builder
-COPY --from=builder /app/dist ./dist
-
-# Copy source code for dev server
 COPY . .
 
 # Expose Vite development server port

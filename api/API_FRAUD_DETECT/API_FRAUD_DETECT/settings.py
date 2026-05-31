@@ -55,15 +55,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'API_FRAUD_DETECT.wsgi.application'
 
-# Database configuration with environment variables
+# Database configuration - SQLite
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.postgresql'),
-        'NAME': os.getenv('DB_NAME', 'fraud_detect'),
-        'USER': os.getenv('DB_USER', 'frauduser'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'fraudpass123'),
-        'HOST': os.getenv('DB_HOST', 'localhost'),
-        'PORT': os.getenv('DB_PORT', '5432'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

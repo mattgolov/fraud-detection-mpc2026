@@ -34,7 +34,6 @@ check_file ".env"
 check_file ".env.template"
 check_file "README.md"
 check_file "DEPLOYMENT_CHECKLIST.md"
-check_file "wait-for-it.sh"
 
 echo ""
 echo "Checking API Configuration..."
