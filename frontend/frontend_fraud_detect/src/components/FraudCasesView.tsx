@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Box,
   Paper,
@@ -7,7 +8,9 @@ import {
   Container,
   Stack,
   CircularProgress,
+  IconButton,
 } from '@mui/material';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import type { FraudCase } from '../interface/FraudCase';
 import ApiHandler from '../services/ApiHandler';
 
@@ -40,6 +43,7 @@ function getStatusColor(
 }
 
 export default function FraudCasesView({ sessionId }: FraudCasesViewProps) {
+  const navigate = useNavigate();
   const [fraudCases, setFraudCases] = useState<FraudCase[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -54,6 +58,8 @@ export default function FraudCasesView({ sessionId }: FraudCasesViewProps) {
         setError(response.error);
       } else if (response.data) {
         setFraudCases(response.data);
+        const fraudCaseQueue = response.data.map((fc) => fc.id);
+        sessionStorage.setItem('fraudCaseQueue', JSON.stringify(fraudCaseQueue));
       }
 
       setIsLoading(false);
@@ -109,6 +115,7 @@ export default function FraudCasesView({ sessionId }: FraudCasesViewProps) {
         )}
 
         <Stack spacing={2}>
+          {/* @todo: For each fraude case include button with -> that when clicked naviages to  '/fraud_cases/:sessionId/:pk'*/}
           {fraudCases.map((fraudCase) => {
             const statusColor = getStatusColor(
               fraudCase.status,
@@ -196,8 +203,8 @@ export default function FraudCasesView({ sessionId }: FraudCasesViewProps) {
                   </Typography>
                 </Box>
 
-                {/* Right Section: Status Chip */}
-                <Box sx={{ ml: 2 }}>
+                {/* Right Section: Status Chip and Navigation */}
+                <Box sx={{ ml: 2, display: 'flex', alignItems: 'center', gap: 1 }}>
                   <Chip
                     label={fraudCase.status}
                     sx={{
@@ -211,6 +218,21 @@ export default function FraudCasesView({ sessionId }: FraudCasesViewProps) {
                       },
                     }}
                   />
+                  <IconButton
+                    size="small"
+                    onClick={() =>
+                      navigate(`/fraud_cases/${sessionId}/${fraudCase.id}`)
+                    }
+                    sx={{
+                      color: '#718096',
+                      '&:hover': {
+                        backgroundColor: 'rgba(113, 128, 150, 0.1)',
+                        color: '#172B4D',
+                      },
+                    }}
+                  >
+                    <ChevronRightIcon />
+                  </IconButton>
                 </Box>
               </Paper>
             );

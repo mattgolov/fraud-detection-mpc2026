@@ -4,10 +4,22 @@ import theme from './theme';
 import './App.css';
 import SetupView from './components/SetupView';
 import FraudCasesView from './components/FraudCasesView';
+import DetailedFraudCaseView from './components/DetailedFraudCaseView';
+import ExportSessionView from './components/ExportSessionView';
 
 function FraudCasesViewWrapper() {
   const { sessionId } = useParams<{ sessionId: string }>();
   return <FraudCasesView sessionId={sessionId || ''} />;
+}
+
+function DetailedFraudCasesViewWrapper() {
+  const { sessionId, pk } = useParams<{ sessionId: string; pk: string }>();
+  return <DetailedFraudCaseView sessionId={sessionId || ''} pk={pk || ''} />;
+}
+
+function ExportSessionViewWrapper() {
+  const { sessionId } = useParams<{ sessionId: string }>();
+  return <ExportSessionView sessionId={sessionId || ''} />;
 }
 
 function NotFoundView() {
@@ -43,16 +55,12 @@ const router = createBrowserRouter([
     element: <FraudCasesViewWrapper />,
   },
   {
-    path: '/load/session/:id',
-    element: <NotFoundView />, // TODO: Implement session loading view
+    path: '/fraud_cases/:sessionId/:pk',
+    element: <DetailedFraudCasesViewWrapper />, 
   },
   {
-    path: '/api/fraud_cases/:id',
-    element: <NotFoundView />, // TODO: Implement case detail view
-  },
-  {
-    path: '/api/session/:id/export',
-    element: <NotFoundView />, // TODO: Implement export view
+    path: '/session/:sessionId/export',
+    element: <ExportSessionViewWrapper />,
   },
   {
     path: '*',
